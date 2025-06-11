@@ -1,0 +1,124 @@
+{
+  "users": [
+    {
+      "id": "usr-alex",
+      "username": "Alex",
+      "email": "alex@example.com",
+      "password": "password123",
+      "balance": 10000,
+      "ownedItemIds": [
+        "itm-br-knife-001",
+        "itm-fd-rifle-001"
+      ]
+    },
+    {
+      "id": "usr-blake",
+      "username": "Blake",
+      "email": "blake@example.com",
+      "password": "hunter2",
+      "balance": 8000,
+      "ownedItemIds": [
+        "itm-br-knife-002"
+      ]
+    },
+    {
+      "id": "usr-sage",
+      "username": "Sage",
+      "email": "sage@example.com",
+      "password": "openSesame",
+      "balance": 15000,
+      "ownedItemIds": []
+    }
+  ],
+  "collections": [
+    {
+      "id": "col-helix-citizens",
+      "name": "HELIX Citizens",
+      "category": "avatars",
+      "coverImage": "/img/collections/helix-citizens.png",
+      "floorPrice": 1000,
+      "volume24h": 10000
+    },
+    {
+      "id": "col-blade-runner",
+      "name": "Blade Runner Collection",
+      "category": "weapons",
+      "coverImage": "/img/collections/blade-runner.png",
+      "floorPrice": 100,
+      "volume24h": 2222
+    },
+    {
+      "id": "col-fire-dragon",
+      "name": "Fire Dragon Weapons",
+      "category": "weapons",
+      "coverImage": "/img/collections/fire-dragon.png",
+      "floorPrice": 10000,
+      "volume24h": 1000
+    }
+  ],
+  "items": [
+    {
+      "id": "itm-br-knife-001",
+      "collectionId": "col-blade-runner",
+      "name": "HELIX X Blade Runner Knife",
+      "image": "/img/items/blade-runner-knife.png",
+      "description": "Factory\u2011new tactical knife, carbon steel with red neon accents.",
+      "attributes": {
+        "type": "Knife",
+        "condition": "Factory New",
+        "productionYear": 2021,
+        "mobility": 120
+      },
+      "ownerId": "usr-alex"
+    },
+    {
+      "id": "itm-fd-rifle-001",
+      "collectionId": "col-fire-dragon",
+      "name": "Fire Dragon AR\u201124",
+      "image": "/img/items/fire-dragon-ar.png",
+      "description": "Assault rifle sporting the Fire Dragon reactive skin.",
+      "attributes": {
+        "type": "Assault Rifle",
+        "condition": "Field\u2011Tested",
+        "productionYear": 2022,
+        "mobility": 80
+      },
+      "ownerId": "usr-alex"
+    },
+    {
+      "id": "itm-br-knife-002",
+      "collectionId": "col-blade-runner",
+      "name": "Blade Runner Knife \u2013 Camo",
+      "image": "/img/items/blade-runner-knife-camo.png",
+      "description": "Limited camo edition of the Blade Runner knife.",
+      "attributes": {
+        "type": "Knife",
+        "condition": "Factory New",
+        "productionYear": 2021,
+        "mobility": 115
+      },
+      "ownerId": "usr-blake"
+    }
+  ],
+  "listings": [
+    {
+      "id": "lst-001",
+      "itemId": "itm-br-knife-001",
+      "sellerId": "usr-alex",
+      "price": 2000,
+      "createdAt": "2025-06-11T09:33:47.860974+00:00",
+      "expiresAt": "2025-06-11T21:33:47.860974+00:00"
+    }
+  ],
+  "offers": [
+    {
+      "id": "off-001",
+      "itemId": "itm-br-knife-001",
+      "offererId": "usr-sage",
+      "price": 1500,
+      "createdAt": "2025-06-11T09:33:47.860974+00:00",
+      "expiresAt": "2025-06-11T21:33:47.860974+00:00",
+      "status": "open"
+    }
+  ]
+}
