@@ -57,9 +57,9 @@ export default function CollectionCard({
       </div>
 
       <ul className="grid grid-cols-2 gap-2 bg-white/5 p-3 rounded mx-2 mb-2">
-        <li className="text-white/50 font-semibold flex flex-col gap-1.5">
+        <li className="text-white/50 font-semibold flex flex-col gap-1">
           Floor Price
-          <small className="text-white flex items-center gap-1">
+          <small className="text-white text-base flex items-center gap-1">
             {floor_price.toLocaleString()}
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <mask id="c" fill="white">
@@ -71,9 +71,9 @@ export default function CollectionCard({
           </small>
         </li>
 
-        <li className="text-white/50 font-semibold flex flex-col gap-1.5">
+        <li className="text-white/50 font-semibold flex flex-col gap-1">
           Total Volume
-          <small className="text-white flex items-center gap-1">
+          <small className="text-white text-base flex items-center gap-1">
             {total_volume.toLocaleString()}
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <mask id="c" fill="white">
