@@ -31,12 +31,6 @@ app.get('/health', (req, res) => {
 app.use('/collections', collectionsRouter);
 app.use('/migration', migrationRouter);
 
-// Error handling middleware
-app.use((err: Error, req: express.Request, res: express.Response, next: express.NextFunction) => {
-  console.error(err.stack);
-  res.status(500).json({ error: 'Something went wrong!' });
-});
-
 // Only listen if we're not in a serverless environment
 if (process.env.NODE_ENV !== 'production') {
   app.listen(port, () => {
