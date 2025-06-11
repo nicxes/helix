@@ -12,7 +12,12 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: process.env.CORS_ORIGIN || '*',
+  methods: ['GET', 'POST', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -32,6 +37,12 @@ app.use((err: Error, req: express.Request, res: express.Response, next: express.
   res.status(500).json({ error: 'Something went wrong!' });
 });
 
-app.listen(port, () => {
-  console.log(`🚀 Server running on http://localhost:${port}`);
-}); 
+// Only listen if we're not in a serverless environment
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(port, () => {
+    console.log(`🚀 Server running on http://localhost:${port}`);
+  });
+}
+
+// Export for serverless
+export default app; 
