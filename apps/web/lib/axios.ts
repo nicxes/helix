@@ -7,15 +7,15 @@ const instance = axios.create({
   },
 });
 
+// Fetcher function for swr
 export const fetcher = (url: string) => {
-  console.log('🚀 Fetching:', `${instance.defaults.baseURL}${url}`);
   return instance.get(url)
     .then(res => {
-      console.log('✅ Response:', res.data);
+      console.log(res.data);
       return res.data;
     })
     .catch(err => {
-      console.error('❌ Error:', err);
+      console.error(err.message);
       throw err;
     });
 };

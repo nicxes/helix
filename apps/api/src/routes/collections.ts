@@ -29,9 +29,28 @@ router.get('/:id', async (req, res) => {
       .single();
 
     if (error) throw error;
-    if (!data) {
+    if (!data)
       return res.status(404).json({ error: 'Collection not found' });
-    }
+
+    res.json(data);
+  } catch (err: any) {
+    res.status(500).json({ error: err.message || 'An unexpected error occurred' });
+  }
+});
+
+// GET /collections/slug/:slug
+router.get('/slug/:slug', async (req, res) => {
+  try {
+    const { slug } = req.params;
+    const { data, error } = await supabase
+      .from('collections')
+      .select('*')
+      .eq('slug', slug)
+      .single();
+
+    if (error) throw error;
+    if (!data)
+      return res.status(404).json({ error: 'Collection not found' });
 
     res.json(data);
   } catch (err: any) {

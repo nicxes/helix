@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Breadcrumb({ items }: { items: { label: string, href: string }[] }) {
+export default function Breadcrumb({ items }: { items: { label: string, href: string, isActive?: boolean }[] }) {
   return (
     <section className="py-7">
       <div className="container mx-auto max-w-hd px-6">
