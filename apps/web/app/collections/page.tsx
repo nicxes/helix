@@ -21,7 +21,7 @@ export default function page() {
           { label: 'Collections', href: '/collections' }
         ]}
       />
-      
+
       <Header />
 
       <section className="py-10">
@@ -36,7 +36,7 @@ export default function page() {
               <CollectionCard
                 key={collection.id}
                 name={collection.name}
-                image={collection.cover_image}
+                image={`https://api.dicebear.com/9.x/bottts-neutral/svg?seed=${collection.name}`}
                 cover={collection.cover_image}
                 floor_price={collection.floor_price}
                 total_volume={collection.volume_24h}
