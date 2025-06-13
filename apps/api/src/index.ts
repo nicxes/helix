@@ -3,7 +3,6 @@ import cors from 'cors';
 import morgan from 'morgan';
 import dotenv from 'dotenv';
 import collectionsRouter from './routes/collections';
-import migrationRouter from './routes/migration';
 
 // Load environment variables
 dotenv.config();
@@ -27,9 +26,7 @@ app.get('/health', (req, res) => {
   res.json({ status: 'ok' });
 });
 
-// Routes
 app.use('/collections', collectionsRouter);
-app.use('/migration', migrationRouter);
 
 // Only listen if we're not in a serverless environment
 if (process.env.NODE_ENV !== 'production') {
