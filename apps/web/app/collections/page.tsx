@@ -18,7 +18,7 @@ export default function page() {
     <main>
       <Breadcrumb
         items={[
-          { label: 'Collections', href: '/collections' }
+          { label: 'Collections', href: '/collections', isActive: true }
         ]}
       />
 
