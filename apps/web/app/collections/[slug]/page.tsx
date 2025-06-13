@@ -26,6 +26,7 @@ export default async function page({ params }: { params: Promise<{ slug: string 
         floor_price={collection.floor_price}
         total_supply={4000}
         total_holders={100}
+        isVerified={collection.verified}
       />
     </main>
   )

@@ -41,7 +41,7 @@ export default function page() {
                 cover={collection.cover_image}
                 floor_price={collection.floor_price}
                 total_volume={collection.volume_24h}
-                isVerified={true}
+                isVerified={collection.verified}
               />
             ))}
           </div>

@@ -6,6 +6,7 @@ export interface Collection {
   cover_image: string;
   floor_price: number;
   volume_24h: number;
+  verified: boolean;
   created_at: string;
   updated_at: string;
 }
