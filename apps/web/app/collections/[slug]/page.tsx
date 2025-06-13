@@ -3,8 +3,9 @@ import axios from "@/lib/axios";
 import Breadcrumb from "@/components/Breadcrumb";
 import Intro from "@/components/Collections/Intro";
 
-export default async function page({ params }: { params: { slug: string } }) {
-  const { data: collection } = await axios.get(`/collections/slug/${params.slug}`)
+export default async function page({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const { data: collection } = await axios.get(`/collections/slug/${slug}`)
 
   return (
     <main>
