@@ -44,7 +44,7 @@ router.get('/slug/:slug', async (req, res) => {
     const { slug } = req.params;
     const { data, error } = await supabase
       .from('collections')
-      .select('*, categories(*)')
+      .select('*, categories(*), items(*)')
       .eq('slug', slug)
       .single();
 

@@ -3,6 +3,7 @@ import cors from 'cors';
 import morgan from 'morgan';
 import dotenv from 'dotenv';
 import collectionsRouter from './routes/collections';
+import categoriesRouter from './routes/categories';
 
 // Load environment variables
 dotenv.config();
@@ -27,6 +28,7 @@ app.get('/health', (req, res) => {
 });
 
 app.use('/collections', collectionsRouter);
+app.use('/categories', categoriesRouter);
 
 // Only listen if we're not in a serverless environment
 if (process.env.NODE_ENV !== 'production') {

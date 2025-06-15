@@ -4,7 +4,7 @@ export default function Header() {
       <div className="bg-[url('/images/header.png')] bg-cover bg-center py-40 rounded">
         <div className="flex items-center justify-center">
           <h1 className="text-white text-7xl font-tungsten uppercase">
-            Weapons
+            Collections
           </h1>
         </div>
       </div>

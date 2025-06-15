@@ -1,30 +1,31 @@
 const config = {
+  title: "HELIX Marketplace",
+  description: "The best place to buy and sell digital assets",
   links: [
     {
       label: "Clothing",
-      href: "/",
+      href: "/categories/clothing",
     },
     {
       label: "Footwear",
-      href: "/",
+      href: "/categories/footwear",
     },
     {
       label: "Accessories",
-      href: "/",
+      href: "/categories/accessories",
     },
     {
-      label: "Properties",
-      href: "/",
+      label: "Real Estate",
+      href: "/categories/real-estate",
     },
     {
       label: "Weapons",
-      href: "/",
+      href: "/categories/weapons",
     },
     {
       label: "Vehicles",
-      href: "/",
+      href: "/categories/vehicles",
     },
-    
   ],
 };
 

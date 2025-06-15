@@ -1,7 +1,11 @@
+import Breadcrumb from "@/components/Breadcrumb";
+import Header from "@/components/Homepage/Header";
+
 export default function Home() {
   return (
-    <div>
-      123
-    </div>
+    <main>
+      <Breadcrumb />
+      <Header />
+    </main>
   );
 }

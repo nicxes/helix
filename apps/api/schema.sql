@@ -10,6 +10,7 @@ CREATE TABLE categories (
     slug VARCHAR(50) UNIQUE NOT NULL,
     name VARCHAR(100) NOT NULL,
     description TEXT,
+    image_url TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
@@ -57,16 +58,16 @@ CREATE TABLE items (
 );
 
 -- Insert categories
-INSERT INTO categories (slug, name, description) VALUES
-('avatars', 'Avatars', 'Digital avatar collections for virtual worlds'),
-('weapons', 'Weapons', 'Combat weapons and tools for gaming'),
-('vehicles', 'Vehicles', 'Transportation and vehicles for virtual worlds'),
-('pets', 'Pets', 'Virtual pets and companions'),
-('real-estate', 'Real Estate', 'Virtual land and properties'),
-('clothing', 'Clothing', 'Wearables and fashion items'),
-('audios', 'Audios', 'Music and audio NFT collections'),
-('art', 'Art', 'Digital art and creative pieces'),
-('gaming', 'Gaming', 'Gaming items and collectibles');
+INSERT INTO categories (slug, name, description, image_url) VALUES
+('avatars', 'Avatars', 'Digital avatar collections for virtual worlds', NULL),
+('weapons', 'Weapons', 'Combat weapons and tools for gaming', 'https://helix-web-gilt.vercel.app/images/categories/67af64e30b9373954c6a5a1b_weapon-mid.jpg'),
+('vehicles', 'Vehicles', 'Transportation and vehicles for virtual worlds', 'http://helix-web-gilt.vercel.app/images/categories/67b1d1581cb2153b1a81703d_HighresScreenshot00148.jpg'),
+('pets', 'Pets', 'Virtual pets and companions', NULL),
+('real-estate', 'Real Estate', 'Virtual land and properties', NULL),
+('clothing', 'Clothing', 'Wearables and fashion items', NULL),
+('audios', 'Audios', 'Music and audio NFT collections', NULL),
+('art', 'Art', 'Digital art and creative pieces', NULL),
+('gaming', 'Gaming', 'Gaming items and collectibles', NULL);
 
 -- Insert collections
 INSERT INTO collections (slug, name, category_id, cover_image, floor_price, volume_24h) VALUES

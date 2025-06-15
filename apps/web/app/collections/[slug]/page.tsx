@@ -28,6 +28,10 @@ export default async function page({ params }: { params: Promise<{ slug: string 
         total_holders={100}
         isVerified={collection.verified}
       />
+
+      <div>
+        
+      </div>
     </main>
   )
 }
