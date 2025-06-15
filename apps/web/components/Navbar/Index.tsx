@@ -1,11 +1,16 @@
+"use client";
+
 import Link from "next/link";
 import config from "@/configs/config";
 
 import Brand from "@/components/Navbar/Brand";
 import Search from "@/components/Navbar/Search";
 import Userbox from "@/components/Navbar/Userbox";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  const pathname = usePathname();
+
   return (
     <nav>
       <div className="h-[72px]">
@@ -29,7 +34,7 @@ export default function Navbar() {
               <Link
                 href={link.href}
                 key={link.label}
-                className="text-white/50 hover:text-white font-semibold uppercase transition duration-150 ease-in-out"
+                className={`${pathname === link.href ? 'text-white' : 'text-white/50'} hover:text-white font-semibold uppercase transition duration-150 ease-in-out`}
               >
                 {link.label}
               </Link>

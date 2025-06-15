@@ -3,16 +3,8 @@ const config = {
   description: "The best place to buy and sell digital assets",
   links: [
     {
-      label: "Clothing",
-      href: "/categories/clothing",
-    },
-    {
-      label: "Footwear",
-      href: "/categories/footwear",
-    },
-    {
-      label: "Accessories",
-      href: "/categories/accessories",
+      label: "Collections",
+      href: "/collections",
     },
     {
       label: "Real Estate",
