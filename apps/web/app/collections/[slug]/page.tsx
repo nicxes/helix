@@ -2,6 +2,7 @@ import axios from "@/lib/axios";
 
 import Breadcrumb from "@/components/Breadcrumb";
 import Intro from "@/components/Collections/Intro";
+import Main from "@/components/Collections/Main";
 
 export default async function page({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -29,9 +30,7 @@ export default async function page({ params }: { params: Promise<{ slug: string 
         isVerified={collection.verified}
       />
 
-      <div>
-        
-      </div>
+      <Main />
     </main>
   )
 }
