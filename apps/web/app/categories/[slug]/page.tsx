@@ -5,20 +5,20 @@ import Header from "@/components/Categories/Header";
 
 export default async function page({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const { data: collection } = await axios.get(`/categories/slug/${slug}`)
+  const { data: category } = await axios.get(`/categories/slug/${slug}`)
 
   return (
     <main>
       <Breadcrumb
         items={[
           { label: 'Categories', href: '/categories' },
-          { label: collection.name, href: `/categories/${collection.slug}`, isActive: true }
+          { label: category.name, href: `/categories/${category.slug}`, isActive: true }
         ]}
       />
 
       <Header
-        title={collection.name}
-        cover=""
+        title={category.name}
+        cover={category.image_url}
       />
 
       <div>
