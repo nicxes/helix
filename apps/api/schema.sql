@@ -50,11 +50,11 @@ CREATE TABLE items (
     image TEXT NOT NULL,
     description TEXT,
     attributes JSONB,
-    owner_id UUID,
+    user_id UUID,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (collection_id) REFERENCES collections(id) ON DELETE CASCADE,
-    FOREIGN KEY (owner_id) REFERENCES users(id) ON DELETE SET NULL
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE SET NULL
 );
 
 -- Insert categories
@@ -129,11 +129,11 @@ INSERT INTO users (username, email, password, balance) VALUES
 ('Sage', 'sage@example.com', 'openSesame', 15000);
 
 -- Insert items
-INSERT INTO items (collection_id, name, image, description, attributes, owner_id) VALUES
+INSERT INTO items (collection_id, name, image, description, attributes, user_id) VALUES
 (
     (SELECT id FROM collections WHERE slug = 'blade-runner'),
     'HELIX X Blade Runner Knife',
-    '/img/items/blade-runner-knife.png',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
     'Factory‑new tactical knife, carbon steel with red neon accents.',
     '{"type": "Knife", "condition": "Factory New", "productionYear": 2021, "mobility": 120}',
     (SELECT id FROM users WHERE username = 'Alex')
@@ -141,7 +141,7 @@ INSERT INTO items (collection_id, name, image, description, attributes, owner_id
 (
     (SELECT id FROM collections WHERE slug = 'fire-dragon'),
     'Fire Dragon AR‑24',
-    '/img/items/fire-dragon-ar.png',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
     'Assault rifle sporting the Fire Dragon reactive skin.',
     '{"type": "Assault Rifle", "condition": "Field‑Tested", "productionYear": 2022, "mobility": 80}',
     (SELECT id FROM users WHERE username = 'Alex')
@@ -149,10 +149,18 @@ INSERT INTO items (collection_id, name, image, description, attributes, owner_id
 (
     (SELECT id FROM collections WHERE slug = 'blade-runner'),
     'Blade Runner Knife – Camo',
-    '/img/items/blade-runner-knife-camo.png',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
     'Limited camo edition of the Blade Runner knife.',
     '{"type": "Knife", "condition": "Factory New", "productionYear": 2021, "mobility": 115}',
     (SELECT id FROM users WHERE username = 'Blake')
+);
+(
+    (SELECT id FROM collections WHERE slug = 'kal-rifle'),
+    'Kal Rifle - Camo',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Limited camo edition of the Kal Rifle.',
+    '{"type": "Assault Rifle", "condition": "Factory New", "productionYear": 2021, "mobility": 115}',
+    (SELECT id FROM users WHERE username = 'Sage')
 );
 
 -- Create indexes
@@ -162,5 +170,5 @@ CREATE INDEX idx_categories_slug ON categories(slug);
 CREATE INDEX idx_users_username ON users(username);
 CREATE INDEX idx_users_email ON users(email);
 CREATE INDEX idx_items_collection_id ON items(collection_id);
-CREATE INDEX idx_items_owner_id ON items(owner_id);
+CREATE INDEX idx_items_user_id ON items(user_id);
 CREATE INDEX idx_items_attributes ON items USING GIN (attributes); 

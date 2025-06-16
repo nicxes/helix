@@ -5,7 +5,7 @@ import { FaChevronRight } from "react-icons/fa";
 
 import Card from "@/components/Items/Card";
 
-export default function Main() {
+export default function Main({ items }: { items: any[] }) {
   const [isCollapsed, setCollapsed] = useState(false);
 
   return (
@@ -15,77 +15,17 @@ export default function Main() {
 
           {/* Grid Items */}
           <div className="flex-1 grid grid-cols-[repeat(auto-fill,minmax(280px,1fr))] gap-3 py-5">
-            <Card
-              image="/images/01b8792575f2710d62a4b031a9e0e25c39927609.png"
-              author="Parallel City Land"
-              name="HELIX - PARALLEL CITY LAND #2405 - 660 WEST 85TH STREET"
-              price={1500}
-              supply={50}
-              isVerified
-            />
-
-            <Card
-              image="/images/01b8792575f2710d62a4b031a9e0e25c39927609.png"
-              author="Parallel City Land"
-              name="HELIX - PARALLEL CITY LAND #2405 - 660 WEST 85TH STREET"
-              price={1500}
-              supply={50}
-              isVerified
-            />
-
-            <Card
-              image="/images/01b8792575f2710d62a4b031a9e0e25c39927609.png"
-              author="Parallel City Land"
-              name="HELIX - PARALLEL CITY LAND #2405 - 660 WEST 85TH STREET"
-              price={1500}
-              supply={50}
-              isVerified
-            />
-
-            <Card
-              image="/images/01b8792575f2710d62a4b031a9e0e25c39927609.png"
-              author="Parallel City Land"
-              name="HELIX - PARALLEL CITY LAND #2405 - 660 WEST 85TH STREET"
-              price={1500}
-              supply={50}
-              isVerified
-            />
-
-            <Card
-              image="/images/01b8792575f2710d62a4b031a9e0e25c39927609.png"
-              author="Parallel City Land"
-              name="HELIX - PARALLEL CITY LAND #2405 - 660 WEST 85TH STREET"
-              price={1500}
-              supply={50}
-              isVerified
-            />
-
-            <Card
-              image="/images/01b8792575f2710d62a4b031a9e0e25c39927609.png"
-              author="Parallel City Land"
-              name="HELIX - PARALLEL CITY LAND #2405 - 660 WEST 85TH STREET"
-              price={1500}
-              supply={50}
-              isVerified
-            />
-
-            <Card
-              image="/images/01b8792575f2710d62a4b031a9e0e25c39927609.png"
-              author="Parallel City Land"
-              name="HELIX - PARALLEL CITY LAND #2405 - 660 WEST 85TH STREET"
-              price={1500}
-              supply={50}
-              isVerified
-            />
-
-            <Card
-              image="/images/01b8792575f2710d62a4b031a9e0e25c39927609.png"
-              author="Parallel City Land"
-              name="HELIX - PARALLEL CITY LAND #2405 - 660 WEST 85TH STREET"
-              price={1500}
-              supply={50}
-              isVerified
-            />
+            {items.map((item) => (
+              <Card
+                key={item.id}
+                image={item.image}
+                author={item.user.username}
+                name={item.name}
+                price={1500}
+                supply={50}
+                isVerified={item.user.verified}
+              />
+            ))}
           </div>
 
           {/* Sidebar */}

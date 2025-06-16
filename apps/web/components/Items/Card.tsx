@@ -8,7 +8,7 @@ export default function ItemCard({
   name,
   price,
   supply,
-  isVerified,
+  isVerified = false,
 }: {
   image: string;
   author: string;

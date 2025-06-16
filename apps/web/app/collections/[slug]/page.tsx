@@ -30,7 +30,7 @@ export default async function page({ params }: { params: Promise<{ slug: string 
         isVerified={collection.verified}
       />
 
-      <Main />
+      <Main items={collection.items} />
     </main>
   )
 }
