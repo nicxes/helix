@@ -128,7 +128,7 @@ INSERT INTO collections (slug, name, category_id, cover_image, floor_price, volu
 
 -- Insert users
 INSERT INTO users (username, email, password, balance) VALUES
-('Nicxes', 'nicxesh@gmail.com', 'lo1l23', 2000000),
+('Nicxes', 'nicxesh@gmail.com', '$2a$10$H/4w3AHXpudd.S7pes26CehX0U6Y4eRgpnGAqittDR/7zmrkGFA8S', 2000000),
 ('Alex', 'alex@example.com', 'password123', 10000),
 ('Blake', 'blake@example.com', 'hunter2', 8000),
 ('Sage', 'sage@example.com', 'openSesame', 15000);

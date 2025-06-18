@@ -4,6 +4,7 @@ import morgan from 'morgan';
 import dotenv from 'dotenv';
 import collectionsRouter from './routes/collections';
 import categoriesRouter from './routes/categories';
+import authRouter from './routes/auth';
 
 // Load environment variables
 dotenv.config();
@@ -27,6 +28,7 @@ app.get('/health', (req, res) => {
   res.json({ status: 'ok' });
 });
 
+app.use('/auth', authRouter);
 app.use('/collections', collectionsRouter);
 app.use('/categories', categoriesRouter);
 

@@ -2,14 +2,15 @@
 
 import Link from "next/link";
 import config from "@/configs/config";
+import { usePathname } from "next/navigation";
 
 import Brand from "@/components/Navbar/Brand";
 import Search from "@/components/Navbar/Search";
+import Guestbox from "@/components/Navbar/Guestbox";
 import Userbox from "@/components/Navbar/Userbox";
-import { usePathname } from "next/navigation";
 
 export default function Navbar() {
-  const pathname = usePathname();
+  const pathname = usePathname()
 
   return (
     <nav>
@@ -18,11 +19,17 @@ export default function Navbar() {
 
           <div className="grid grid-cols-[1fr_486px_1fr] items-center justify-between h-full">
             <Brand />
+            
             <Search />
+
+            <Guestbox />
+
+            {/* Userbox 
             <Userbox
               balance={2000000}
               bagCount={12}
             />
+            */}
           </div>
         </div>
       </div>
