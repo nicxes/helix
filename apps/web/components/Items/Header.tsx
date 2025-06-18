@@ -126,8 +126,8 @@ export default function Header() {
       </div>
 
       {/* Charts and Prices */}
-      <div className="bg-white/5 space-y-4 p-5 rounded-lg">
-        <div>
+      <div className="bg-white/5 space-y-6 p-5 rounded-lg">
+        <div className="space-y-4">
           <Disclosure defaultOpen as="div" className="space-y-4">
             <DisclosureButton className="flex items-center justify-between gap-6 w-full cursor-pointer group">
               <h2 className="text-white text-base font-semibold uppercase flex items-center gap-2">
@@ -142,6 +142,32 @@ export default function Header() {
               <Chart />
             </DisclosurePanel>
           </Disclosure>
+
+          <ol className="grid grid-cols-6 gap-[1px] h-10 rounded overflow-hidden">
+            <li className="text-white font-semibold uppercase bg-white/10 flex items-center justify-center h-full cursor-pointer">
+              All
+            </li>
+
+            <li className="text-white/50 font-semibold uppercase bg-white/5 flex items-center justify-center h-full cursor-pointer">
+              1M
+            </li>
+
+            <li className="text-white/50 font-semibold uppercase bg-white/5 flex items-center justify-center h-full cursor-pointer">
+              3M
+            </li>
+
+            <li className="text-white/50 font-semibold uppercase bg-white/5 flex items-center justify-center h-full cursor-pointer">
+              6M
+            </li>
+
+            <li className="text-white/50 font-semibold uppercase bg-white/5 flex items-center justify-center h-full cursor-pointer">
+              1YR
+            </li>
+
+            <li className="text-white/50 font-semibold uppercase bg-white/5 flex items-center justify-center h-full cursor-pointer">
+              YTD
+            </li>
+          </ol>
         </div>
 
         <div>
