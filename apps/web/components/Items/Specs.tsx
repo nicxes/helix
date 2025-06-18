@@ -1,7 +1,7 @@
 'use client'
 
 import { Progress } from "radix-ui";
-import { FaChevronDown, FaFileAlt } from 'react-icons/fa'
+import { FaCaretDown, FaFileAlt } from 'react-icons/fa'
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 
 const stats = [
@@ -31,12 +31,12 @@ export default function Specs() {
   return (
     <div className="bg-white/5 px-5 py-6 rounded-lg space-y-6">
       <Disclosure as="div" className="space-y-4">
-        <DisclosureButton className="flex items-center justify-between gap-6 w-full cursor-pointer">
-          <span className="text-white font-semibold uppercase flex items-center gap-2">
+        <DisclosureButton className="flex items-center justify-between gap-6 w-full cursor-pointer group">
+          <h2 className="text-white font-semibold uppercase flex items-center gap-2">
             <FaFileAlt />
             Details
-          </span>
-          <FaChevronDown className="text-white/50 size-4" />
+          </h2>
+          <FaCaretDown className="text-white/50 size-5 group-data-open:rotate-180 transition duration-150 ease-in-out" />
         </DisclosureButton>
 
         <DisclosurePanel className="font-barlow text-white/50 font-medium">

@@ -1,11 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
-import { FaRegHeart, FaBinoculars, FaEye, FaTag, FaHandHolding } from "react-icons/fa"
-import { FaRegShareFromSquare } from "react-icons/fa6"
 import { BsThreeDots } from "react-icons/bs"
+import { PiChartBarFill } from "react-icons/pi";
+import { FaRegShareFromSquare } from "react-icons/fa6"
+import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
+import { FaRegHeart, FaBinoculars, FaEye, FaTag, FaHandHolding, FaCaretDown } from "react-icons/fa"
+
+import Chart from '@/components/Items/Chart'
 
 export default function Header() {
   return (
     <header className="space-y-4">
+      {/* Title and Author */}
       <div>
         <div className="flex items-center justify-between gap-2">
           <h3 className="font-barlow font-semibold text-white/50 flex items-center gap-2">
@@ -89,8 +94,11 @@ export default function Header() {
       </div>
 
       {/* Actions */}
-      <div className="bg-white/5 rounded-lg p-5 space-y-4">
-        <h2 className="text-white font-semibold uppercase mb-2">
+      <div className="relative overflow-hidden bg-white/5 rounded-lg p-5 space-y-4 after:absolute after:right-0 after:bottom-0 after:bg-white/5 after:size-7 clip-polygon">
+        <h2 className="text-white font-semibold uppercase flex items-center gap-2 mb-2">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path fillRule="evenodd" clipRule="evenodd" d="M1.94114 1.94114C2.23968 1.64269 2.59408 1.40596 2.98411 1.24448C3.37413 1.083 3.79215 0.999921 4.21429 1H16.4286C17.1106 1 17.7646 1.27092 18.2468 1.75315C18.7291 2.23539 19 2.88944 19 3.57143V8.07143C19 8.24192 18.9323 8.40544 18.8117 8.526C18.6912 8.64655 18.5276 8.71428 18.3571 8.71428H16.7564V4.21429C16.7564 4.00116 16.6718 3.79677 16.5211 3.64607C16.3704 3.49538 16.166 3.41071 15.9529 3.41071C15.7397 3.41071 15.5353 3.49538 15.3846 3.64607C15.2339 3.79677 15.1493 4.00116 15.1493 4.21429V8.71428H15.1429V18.3571C15.1429 18.4709 15.1127 18.5826 15.0555 18.6809C14.9982 18.7792 14.9159 18.8605 14.817 18.9166C14.718 18.9726 14.6059 19.0015 14.4922 19.0001C14.3785 18.9987 14.2671 18.9672 14.1696 18.9087L11.2857 17.1781L8.40186 18.91C8.30202 18.9698 8.18782 19.0014 8.07143 19.0014C7.95504 19.0014 7.84084 18.9698 7.741 18.91L4.85714 17.1781L1.97329 18.91C1.87563 18.9685 1.76418 19 1.65033 19.0014C1.53649 19.0027 1.42434 18.9738 1.32534 18.9175C1.22635 18.8613 1.14406 18.7798 1.0869 18.6813C1.02974 18.5829 0.99975 18.471 1 18.3571V4.21429C0.999923 3.79215 1.083 3.37413 1.24448 2.9841C1.40596 2.59408 1.64269 2.23968 1.94114 1.94114ZM8.07143 3.57143C8.32717 3.57143 8.57244 3.67302 8.75328 3.85386C8.93412 4.0347 9.03571 4.27997 9.03571 4.53571V5.21457C9.48791 5.29079 9.91149 5.48656 10.2626 5.78157C10.6137 6.07659 10.8795 6.46012 11.0324 6.89243C11.1177 7.13368 11.1036 7.39892 10.9933 7.62979C10.883 7.86066 10.6855 8.03825 10.4442 8.1235C10.203 8.20875 9.93773 8.19467 9.70686 8.08435C9.47599 7.97404 9.29839 7.77654 9.21314 7.53528C9.16879 7.41011 9.08676 7.30175 8.97832 7.22508C8.86989 7.14842 8.74037 7.10722 8.60757 7.10714H7.363C7.24752 7.10797 7.13638 7.15123 7.05073 7.22869C6.96508 7.30616 6.9109 7.41241 6.89852 7.52723C6.88613 7.64204 6.9164 7.75741 6.98355 7.85135C7.05071 7.9453 7.15007 8.01127 7.26271 8.03671L9.15657 8.45071C9.74074 8.57754 10.2625 8.90393 10.6321 9.37377C11.0017 9.8436 11.196 10.4275 11.1817 11.0251C11.1674 11.6227 10.9453 12.1967 10.5537 12.6483C10.162 13.0999 9.62529 13.401 9.03571 13.4997V14.1786C9.03571 14.4343 8.93412 14.6796 8.75328 14.8604C8.57244 15.0413 8.32717 15.1429 8.07143 15.1429C7.81568 15.1429 7.57041 15.0413 7.38958 14.8604C7.20874 14.6796 7.10714 14.4343 7.10714 14.1786V13.4997C6.65495 13.4235 6.23136 13.2277 5.88028 12.9327C5.5292 12.6377 5.2634 12.2542 5.11043 11.8219C5.02518 11.5806 5.03926 11.3154 5.14957 11.0845C5.25988 10.8536 5.45739 10.676 5.69864 10.5908C5.9399 10.5055 6.20513 10.5196 6.436 10.6299C6.66687 10.7402 6.84447 10.9377 6.92972 11.179C6.97407 11.3042 7.0561 11.4125 7.16454 11.4892C7.27297 11.5659 7.40249 11.6071 7.53529 11.6071H8.60757C8.76782 11.6096 8.92322 11.5522 9.04331 11.4461C9.1634 11.3399 9.23952 11.1928 9.25674 11.0334C9.27396 10.8741 9.23104 10.7141 9.1364 10.5847C9.04176 10.4554 8.90222 10.3661 8.74514 10.3343L6.85 9.92157C6.29467 9.79884 5.80099 9.48282 5.45703 9.02988C5.11308 8.57695 4.94122 8.01654 4.9721 7.44865C5.00299 6.88075 5.23462 6.3423 5.62568 5.92934C6.01673 5.51638 6.54177 5.25577 7.10714 5.194V4.53571C7.10714 4.27997 7.20874 4.0347 7.38958 3.85386C7.57041 3.67302 7.81568 3.57143 8.07143 3.57143Z" fill="white"/>
+          </svg>
           Price
         </h2>
         <h4 className="text-white text-[28px] font-semibold capitalize flex items-center gap-1">
@@ -105,16 +113,34 @@ export default function Header() {
         </h4>
 
         <div className="grid grid-cols-2 gap-4">
-          <button className="text-[#0A0A0A] font-bold uppercase bg-alert h-10 flex items-center justify-center gap-2 rounded cursor-pointer">
+          <button className="relative text-[#0A0A0A] font-bold uppercase bg-alert h-10 flex items-center justify-center gap-2 rounded cursor-pointer after:absolute after:right-0 after:bottom-0 after:bg-[#161616] after:size-4 clip-polygon">
             <FaTag size={20} />
             Buy Now
           </button>
 
-          <button className="text-white font-bold uppercase bg-white/5 h-10 flex items-center justify-center gap-2 rounded cursor-pointer">
+          <button className="relative text-white font-bold uppercase bg-white/5 h-10 flex items-center justify-center gap-2 rounded cursor-pointer after:absolute after:right-0 after:bottom-0 after:bg-[#161616] after:size-4 clip-polygon">
             <FaHandHolding size={20} />
             Make Offer
           </button>
         </div>
+      </div>
+
+      {/* Charts and Prices */}
+      <div className="bg-white/5 p-5">
+        <Disclosure defaultOpen as="div" className="space-y-4">
+          <DisclosureButton className="flex items-center justify-between gap-6 w-full cursor-pointer group">
+            <h2 className="text-white text-base font-semibold uppercase flex items-center gap-2">
+              <PiChartBarFill size={20} />
+              Volume and Price
+            </h2>
+
+            <FaCaretDown className="text-white/50 size-5 group-data-open:rotate-180 transition duration-150 ease-in-out" />
+          </DisclosureButton>
+
+          <DisclosurePanel>
+            <Chart />
+          </DisclosurePanel>
+        </Disclosure>
       </div>
     </header>
   )
