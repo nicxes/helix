@@ -1,11 +1,22 @@
 import Image from "next/image";
-import { Transition } from '@headlessui/react'
+import { Transition } from '@headlessui/react';
+import { signOut, useSession } from "next-auth/react";
 
 export default function Userbox({ balance = 0, bagCount = 0 }: { balance?: number, bagCount?: number }) {
+  const { data: session } = useSession();
+
+  const handleLogout = () => {
+    signOut();
+  };
+
   return (
     <div className="flex items-center justify-end gap-3">
       <div className="flex items-center gap-0.5">
-        <div className="bg-white/5 rounded-l h-10 py-4 px-2.5 flex items-center justify-center gap-2.5">
+        <button 
+          onClick={handleLogout}
+          className="bg-white/5 rounded-l h-10 py-4 px-2.5 flex items-center justify-center gap-2.5 hover:bg-white/10 transition duration-150 ease-in-out"
+          title="Click to logout"
+        >
           <Image
             src="/images/avatar.png"
             alt="avatar"
@@ -19,7 +30,7 @@ export default function Userbox({ balance = 0, bagCount = 0 }: { balance?: numbe
               <path d="M9.27028 13.2556L4.21434 8.19969C4.1446 8.12995 4.09253 8.05464 4.05813 7.97374C4.02372 7.89285 4.00606 7.80544 4.00513 7.71153C4.00513 7.52557 4.06929 7.36285 4.1976 7.22337C4.32592 7.0839 4.49422 7.01416 4.7025 7.01416H15.3025C15.5118 7.01416 15.6805 7.0839 15.8088 7.22337C15.9372 7.36285 16.0008 7.52557 15.9999 7.71153C15.9999 7.75802 15.9302 7.92074 15.7907 8.19969L10.7348 13.2556C10.6185 13.3719 10.5023 13.4532 10.3861 13.4997C10.2698 13.5462 10.142 13.5695 10.0025 13.5695C9.86305 13.5695 9.7352 13.5462 9.61897 13.4997C9.50274 13.4532 9.38651 13.3719 9.27028 13.2556Z" fill="white" fillOpacity="0.56"/>
             </svg>
           </div>
-        </div>
+        </button>
 
         {/* Balance */}
         <div className="relative bg-white/5 rounded-tr h-10 py-4 px-2.5 flex items-center justify-center gap-0.5 after:absolute after:right-0 after:bottom-0 after:bg-background after:size-4 clip-polygon">

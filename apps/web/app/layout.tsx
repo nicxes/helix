@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 import Navbar from "@/components/Navbar/Index";
+import SessionProvider from "@/components/SessionProvider";
 
 const barlow = Barlow({
   subsets: ["latin"],
@@ -34,8 +35,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${barlow.variable} ${tungsten.variable} bg-background text-neutral-50 font-barlow`}>
-        <Navbar />
-        {children}
+        <SessionProvider>
+          <Navbar />
+          {children}
+        </SessionProvider>
       </body>
     </html>
   );

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import config from "@/configs/config";
 import { usePathname } from "next/navigation";
+import { useSession } from "next-auth/react";
 
 import Brand from "@/components/Navbar/Brand";
 import Search from "@/components/Navbar/Search";
@@ -11,6 +12,7 @@ import Userbox from "@/components/Navbar/Userbox";
 
 export default function Navbar() {
   const pathname = usePathname()
+  const { data: session, status } = useSession()
 
   return (
     <nav>
@@ -22,14 +24,16 @@ export default function Navbar() {
             
             <Search />
 
-            <Guestbox />
-
-            {/* Userbox 
-            <Userbox
-              balance={2000000}
-              bagCount={12}
-            />
-            */}
+            {status === "loading" ? (
+              <div className="animate-pulse bg-white/5 rounded py-2 px-6 h-10 w-20"></div>
+            ) : session ? (
+              <Userbox
+                balance={2000000}
+                bagCount={12}
+              />
+            ) : (
+              <Guestbox />
+            )}
           </div>
         </div>
       </div>

@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { AlertDialog } from "radix-ui";
 import { Button } from "@headlessui/react";
-
-import axios from "@/lib/axios";
+import { signIn } from "next-auth/react";
 
 export default function Guestbox() {
   const [email, setEmail] = useState("")
@@ -13,17 +12,25 @@ export default function Guestbox() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
+    setError("");
 
     try {
-      const response = await axios.post("/auth/login", {
+      const result = await signIn("credentials", {
         email,
         password,
-      })
+        redirect: false,
+      });
 
-
+      if (result?.error) {
+        setError("Invalid credentials");
+        setIsLoading(false);
+      } else {
+        // Login successful, the page will reload automatically
+        window.location.reload();
+      }
     } catch (err: any) {
-      setError(err.response?.data?.error || "An error occurred")
-      setIsLoading(false)
+      setError("An error occurred");
+      setIsLoading(false);
     }
   };
 
