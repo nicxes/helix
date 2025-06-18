@@ -19,7 +19,7 @@ export default function ItemPage() {
           <div className="grid grid-cols-2 gap-6">
 
             <div>
-              <div className="sticky top-0 space-y-6">
+              <div className="sticky top-6 space-y-6">
                 <ModelView />
                 <Specs />
               </div>

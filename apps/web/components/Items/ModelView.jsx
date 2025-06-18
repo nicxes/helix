@@ -11,7 +11,7 @@ export default function ModelView() {
         camera-controls
         auto-rotate
         ar
-        style={{ width: '100%', height: '600px', border: '1px solid #FFFFFF1A', borderRadius: '8px' }}
+        style={{ width: '100%', height: '520px', border: '1px solid #FFFFFF1A', borderRadius: '8px' }}
       />
     </div>
   )
