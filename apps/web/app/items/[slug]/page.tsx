@@ -2,6 +2,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import ModelView from "@/components/Items/ModelView";
 import Specs from "@/components/Items/Specs";
 import Header from "@/components/Items/Header";
+import MoreItems from "@/components/Items/MoreItems";
 
 export default function ItemPage() {
   return (
@@ -24,22 +25,13 @@ export default function ItemPage() {
 
             <div>
               <Header />
-
             </div>
 
           </div>
         </div>
       </section>
 
-      <section>
-        <div className="container mx-auto max-w-hd px-6">
-          <h2 className="font-tungsten text-white text-[56px] uppercase">
-            More Weapons
-          </h2>
-
-          
-        </div>
-      </section>
+      <MoreItems />
     </main>
   )
 }
