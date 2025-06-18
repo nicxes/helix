@@ -18,9 +18,11 @@ export default function ItemPage() {
         <div className="container mx-auto max-w-hd px-6">
           <div className="grid grid-cols-2 gap-6">
 
-            <div className="space-y-6">
-              <ModelView />
-              <Specs />
+            <div>
+              <div className="sticky top-0 space-y-6">
+                <ModelView />
+                <Specs />
+              </div>
             </div>
 
             <div>
