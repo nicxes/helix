@@ -30,6 +30,14 @@ app.get('/health', (req, res) => {
   res.json({ status: 'ok' });
 });
 
+// API info endpoint
+app.get('/', (req, res) => {
+  res.json({
+    name: 'HELIX API',
+    date: '2025-06-19'
+  });
+});
+
 app.use('/auth', authRouter);
 app.use('/collections', collectionsRouter);
 app.use('/categories', categoriesRouter);
