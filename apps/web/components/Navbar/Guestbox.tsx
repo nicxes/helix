@@ -45,10 +45,10 @@ export default function Guestbox() {
       </div>
 
       <AlertDialog.Portal>
-        <AlertDialog.Overlay className="fixed z-40 inset-0 bg-alert/10 transition duration-150 ease-in-out" />
+        <AlertDialog.Overlay className="fixed z-40 inset-0 bg-[#0A0A0A]/70 transition duration-150 ease-in-out" />
         
-        <AlertDialog.Content className="fixed z-50 left-1/2 top-1/2 max-h-[85vh] w-[90vw] max-w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-md bg-background border border-white/5 p-6 shadow-xl focus:outline-none">
-          <AlertDialog.Title className="text-2xl font-semibold text-white mb-6">
+        <AlertDialog.Content className="fixed z-50 left-1/2 top-1/2 max-h-[85vh] w-[90vw] max-w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-md bg-[#191919] p-6 shadow-xl focus:outline-none">
+          <AlertDialog.Title className="font-tungsten text-4xl font-semibold text-white uppercase mb-6">
             Sign in
           </AlertDialog.Title>
           
@@ -63,7 +63,7 @@ export default function Guestbox() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="w-full px-3 py-2 border border-white/10 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-alert focus:border-alert"
+                className="w-full px-3 py-2 bg-white/10 rounded shadow-sm focus:outline-none focus:ring focus:ring-alert focus:border-alert"
                 placeholder="your@email.com"
               />
             </div>
@@ -78,7 +78,7 @@ export default function Guestbox() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
-                className="w-full px-3 py-2 border border-white/10 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-alert focus:border-alert"
+                className="w-full px-3 py-2 bg-white/10 rounded shadow-sm focus:outline-none focus:ring focus:ring-alert focus:border-alert"
                 placeholder="••••••••"
               />
             </div>
@@ -89,11 +89,11 @@ export default function Guestbox() {
               </div>
             )}
 
-            <div className="flex justify-end gap-3 pt-4">
+            <div className="grid grid-cols-2 gap-3 pt-4">
               <AlertDialog.Cancel asChild>
                 <button
                   type="button"
-                  className="px-4 py-2 text-sm font-medium text-white bg-transparent border border-white/10 rounded-md hover:bg-white/10 focus:outline-none focus:ring focus:ring-alert"
+                  className="px-4 h-10 flex items-center justify-center font-bold text-white uppercase bg-white/10 rounded-md hover:bg-white/10"
                 >
                   Cancel
                 </button>
@@ -102,7 +102,7 @@ export default function Guestbox() {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="px-4 py-2 text-sm font-medium text-white bg-alert border border-transparent rounded-md hover:bg-alert/80 focus:outline-none focus:ring focus:ring-alert disabled:opacity-50 disabled:cursor-not-allowed transition duration-150 ease-in-out"
+                className="px-4 h-10 flex items-center justify-center font-bold text-black uppercase bg-alert rounded-md hover:bg-alert/80 disabled:opacity-50 disabled:cursor-not-allowed transition duration-150 ease-in-out"
               >
                 {isLoading ? "Loading..." : "Sign in"}
               </button>
