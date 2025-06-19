@@ -1,10 +1,10 @@
 import express from 'express';
 import bcrypt from 'bcryptjs';
 import { v4 as uuidv4 } from 'uuid';
-import { supabase } from '../lib/supabase';
-import { generateToken } from '../lib/jwt';
-import { authMiddleware } from '../middleware/auth';
-import '../types/auth';
+import { supabase } from '@/lib/supabase';
+import { generateToken } from '@/lib/jwt';
+import { authMiddleware } from '@/middleware/auth';
+import '@/types/auth';
 
 const router = express.Router()
 

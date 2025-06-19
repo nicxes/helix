@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
 
 import { Request, Response, NextFunction } from 'express';
-import { supabase } from '../lib/supabase';
+import { supabase } from '@/lib/supabase';
 
 export const authMiddleware = async (req: Request, res: Response, next: NextFunction) => {
   try {

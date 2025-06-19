@@ -3,10 +3,10 @@ import cors from 'cors';
 import morgan from 'morgan';
 import dotenv from 'dotenv';
 
-import collectionsRouter from './routes/collections';
-import categoriesRouter from './routes/categories';
-import authRouter from './routes/auth';
-import itemsRouter from './routes/items';
+import collectionsRouter from '@/routes/collections';
+import categoriesRouter from '@/routes/categories';
+import authRouter from '@/routes/auth';
+import itemsRouter from '@/routes/items';
 
 // Load environment variables
 dotenv.config();
