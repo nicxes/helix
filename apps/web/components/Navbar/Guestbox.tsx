@@ -45,9 +45,9 @@ export default function Guestbox() {
       </div>
 
       <AlertDialog.Portal>
-        <AlertDialog.Overlay className="fixed inset-0 bg-alert/10 transition duration-150 ease-in-out" />
+        <AlertDialog.Overlay className="fixed z-40 inset-0 bg-alert/10 transition duration-150 ease-in-out" />
         
-        <AlertDialog.Content className="fixed left-1/2 top-1/2 max-h-[85vh] w-[90vw] max-w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-md bg-background border border-white/5 p-6 shadow-xl focus:outline-none">
+        <AlertDialog.Content className="fixed z-50 left-1/2 top-1/2 max-h-[85vh] w-[90vw] max-w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-md bg-background border border-white/5 p-6 shadow-xl focus:outline-none">
           <AlertDialog.Title className="text-2xl font-semibold text-white mb-6">
             Sign in
           </AlertDialog.Title>
@@ -95,7 +95,7 @@ export default function Guestbox() {
                   type="button"
                   className="px-4 py-2 text-sm font-medium text-white bg-transparent border border-white/10 rounded-md hover:bg-white/10 focus:outline-none focus:ring focus:ring-alert"
                 >
-                  Cancelar
+                  Cancel
                 </button>
               </AlertDialog.Cancel>
               
@@ -104,7 +104,7 @@ export default function Guestbox() {
                 disabled={isLoading}
                 className="px-4 py-2 text-sm font-medium text-white bg-alert border border-transparent rounded-md hover:bg-alert/80 focus:outline-none focus:ring focus:ring-alert disabled:opacity-50 disabled:cursor-not-allowed transition duration-150 ease-in-out"
               >
-                {isLoading ? "Iniciando..." : "Iniciar Sesión"}
+                {isLoading ? "Loading..." : "Sign in"}
               </button>
             </div>
           </form>
