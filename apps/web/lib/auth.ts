@@ -63,6 +63,6 @@ export const authOptions: NextAuthOptions = {
     }
   },
   pages: {
-    signIn: '/', // Redirige al home en lugar de usar la página por defecto
+    signIn: '/',
   }
 } 

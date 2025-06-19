@@ -5,17 +5,13 @@ import { signOut, useSession } from "next-auth/react";
 export default function Userbox({ balance = 0, bagCount = 0 }: { balance?: number, bagCount?: number }) {
   const { data: session } = useSession();
 
-  const handleLogout = () => {
-    signOut();
-  };
+  console.log(session)
 
   return (
     <div className="flex items-center justify-end gap-3">
       <div className="flex items-center gap-0.5">
         <button 
-          onClick={handleLogout}
-          className="bg-white/5 rounded-l h-10 py-4 px-2.5 flex items-center justify-center gap-2.5 hover:bg-white/10 transition duration-150 ease-in-out"
-          title="Click to logout"
+          className="bg-white/5 rounded-l h-10 py-4 px-2.5 flex items-center justify-center gap-2.5 hover:bg-white/10 transition duration-150 ease-in-out cursor-pointer"
         >
           <Image
             src="/images/avatar.png"
