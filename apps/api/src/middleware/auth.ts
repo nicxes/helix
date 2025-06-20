@@ -15,10 +15,10 @@ export const authMiddleware = async (req: Request, res: Response, next: NextFunc
     const token = authHeader.substring(7) // Remove "Bearer " prefix
     const decoded = jwt.verify(token, process.env.JWT_SECRET || 'HELIX') as { userId: string; email: string } // Verify token
     
-    // Check if user exists in database
+    // Check if user exists in database and get all fields
     const { data: user, error } = await supabase
       .from('users')
-      .select('id, email, created_at, updated_at')
+      .select('*') // Select all fields
       .eq('id', decoded.userId)
       .single();
 
@@ -26,8 +26,9 @@ export const authMiddleware = async (req: Request, res: Response, next: NextFunc
     if (error || !user)
       return res.status(401).json({ error: 'Unauthorized' })
 
-    // Add user to request
-    req.user = user;
+    // Add user to request (exclude password for security)
+    const { password, ...userWithoutPassword } = user;
+    req.user = userWithoutPassword;
 
     // Continue to next process (probably to the route)
     next()

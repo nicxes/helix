@@ -1,11 +1,10 @@
+import useSWR from 'swr';
+import { fetcher } from '@/lib/axios';
 import Image from "next/image";
 import { Transition } from '@headlessui/react';
-import { signOut, useSession } from "next-auth/react";
 
-export default function Userbox({ balance = 0, bagCount = 0 }: { balance?: number, bagCount?: number }) {
-  const { data: session } = useSession();
-
-  console.log(session)
+export default function Userbox({ bagCount = 0 }: { bagCount?: number }) {
+  const { data, isLoading } = useSWR('/auth/me', fetcher)
 
   return (
     <div className="flex items-center justify-end gap-3">
@@ -30,7 +29,7 @@ export default function Userbox({ balance = 0, bagCount = 0 }: { balance?: numbe
 
         {/* Balance */}
         <div className="relative bg-white/5 rounded-tr h-10 py-4 px-2.5 flex items-center justify-center gap-0.5 after:absolute after:right-0 after:bottom-0 after:bg-background after:size-4 clip-polygon">
-          {balance.toLocaleString()}
+          {isLoading ? null : data.user?.balance.toLocaleString()}
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <mask id="c" fill="white">
               <path d="M10 2.5C14.1421 2.5 17.5 5.85786 17.5 10C17.5 14.1421 14.1421 17.5 10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5ZM5.94238 6.10645C5.39559 6.1077 5.12112 6.77754 5.50586 7.17188L7.83594 9.55957C8.07357 9.80319 8.07359 10.1958 7.83594 10.4395L5.49219 12.8418C5.10694 13.2368 5.38295 13.9068 5.93066 13.9062L7.68359 13.9033C7.84769 13.903 8.00468 13.8361 8.12012 13.7178L9.56836 12.2334C9.80945 11.9864 10.2031 11.9866 10.4443 12.2334L11.8857 13.71C12.0017 13.8288 12.1594 13.8957 12.3242 13.8955L14.0713 13.8926C14.6181 13.8914 14.8925 13.2225 14.5078 12.8281L8.12793 6.28906C8.01198 6.17037 7.85419 6.10328 7.68945 6.10352L5.94238 6.10645ZM12.2012 6.09668C12.1191 6.09682 12.0402 6.13025 11.9824 6.18945L11.4043 6.78125C11.2854 6.90306 11.2854 7.09987 11.4043 7.22168L12.7129 8.5625C12.8334 8.68581 13.0298 8.68583 13.1504 8.5625L14.459 7.22168C14.5778 7.09987 14.5778 6.90306 14.459 6.78125L13.8779 6.18652C13.82 6.12731 13.7414 6.09373 13.6592 6.09375L12.2012 6.09668Z"/>

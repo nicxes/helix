@@ -12,7 +12,7 @@ import Userbox from "@/components/Navbar/Userbox";
 
 export default function Navbar() {
   const pathname = usePathname()
-  const { data: session } = useSession()
+  const { data: session, status } = useSession()
 
   return (
     <nav>
@@ -22,7 +22,11 @@ export default function Navbar() {
           <div className="grid grid-cols-[1fr_486px_1fr] items-center justify-between h-full">
             <Brand />
             <Search />
-            {session ? <Userbox /> : <Guestbox />}
+            {status === "loading" ? (
+              <span/>
+            ) : (
+              session ? <Userbox /> : <Guestbox />
+            )}
           </div>
         </div>
       </div>

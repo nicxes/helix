@@ -118,11 +118,17 @@ router.post('/login', async (req, res) => {
 // GET /auth/me
 router.get('/me', authMiddleware, async (req, res) => {
   try {
-    // User is already available in req.user?
-    res.json({ user: req.user })
+    // User is already available in req.user from middleware with all fields (except password)
+    res.json({ 
+      success: true,
+      user: req.user 
+    })
   } catch (error) {
     console.error('Get user error:', error)
-    res.status(500).json({ error: 'Internal server error' })
+    res.status(500).json({ 
+      success: false,
+      error: 'Internal server error' 
+    })
   }
 });
 
