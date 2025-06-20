@@ -139,7 +139,7 @@ INSERT INTO items (collection_id, name, image, description, attributes, user_id)
     (SELECT id FROM collections WHERE slug = 'blade-runner'),
     'HELIX X Blade Runner Knife',
     'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
-    'Factory‑new tactical knife, carbon steel with red neon accents.',
+    'The HELIX X Blade Runner Knife is a masterpiece of tactical precision, forged from the finest carbon steel and tempered in the fires of neo-Tokyo''s underground foundries. Its razor-sharp edge gleams with an otherworldly sharpness, while crimson neon accents pulse along the blade''s spine like digital veins carrying electric blood. The ergonomic grip, wrapped in synthetic bio-leather, molds perfectly to the hand, promising swift and silent strikes in the neon-lit alleyways of the future.',
     '{"type": "Knife", "condition": "Factory New", "productionYear": 2021, "mobility": 120}',
     (SELECT id FROM users WHERE username = 'Alex')
 ),
@@ -147,7 +147,7 @@ INSERT INTO items (collection_id, name, image, description, attributes, user_id)
     (SELECT id FROM collections WHERE slug = 'fire-dragon'),
     'Fire Dragon AR‑24',
     'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
-    'Assault rifle sporting the Fire Dragon reactive skin.',
+    'The Fire Dragon AR-24 is a devastating instrument of warfare, its polymer frame adorned with the legendary Fire Dragon reactive skin that shifts and writhes like living flames. Each squeeze of the trigger unleashes controlled chaos, while the weapon''s advanced recoil compensation system keeps the barrel steady even as dragon-fire patterns dance across its surface. The integrated smart scope automatically adjusts for wind resistance and target movement, making every shot count in the heat of digital combat.',
     '{"type": "Assault Rifle", "condition": "Field‑Tested", "productionYear": 2022, "mobility": 80}',
     (SELECT id FROM users WHERE username = 'Alex')
 ),
@@ -155,7 +155,7 @@ INSERT INTO items (collection_id, name, image, description, attributes, user_id)
     (SELECT id FROM collections WHERE slug = 'blade-runner'),
     'Blade Runner Knife – Camo',
     'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
-    'Limited camo edition of the Blade Runner knife.',
+    'This limited edition Blade Runner Knife emerges from the shadows with its adaptive camouflage coating that shifts between urban grays and digital greens. The nano-enhanced surface responds to environmental light, making the wielder nearly invisible in low-light conditions. Its monomolecular edge can slice through kevlar like silk, while the tactical grip features micro-sensors that adjust grip texture based on stress levels and ambient temperature.',
     '{"type": "Knife", "condition": "Factory New", "productionYear": 2021, "mobility": 115}',
     (SELECT id FROM users WHERE username = 'Blake')
 ),
@@ -163,7 +163,7 @@ INSERT INTO items (collection_id, name, image, description, attributes, user_id)
     (SELECT id FROM collections WHERE slug = 'kal-rifle'),
     'Kal Rifle - Camo',
     'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
-    'Limited camo edition of the Kal Rifle.',
+    'The Kal Rifle Camo Edition stands as the pinnacle of military engineering, its frame wrapped in an advanced photochromatographic camouflage that adapts to any battlefield environment. The weapon''s neural-link targeting system synchronizes with the user''s biometrics, reducing reaction time to mere milliseconds. Its modular design allows for rapid customization, while the proprietary recoil dampening system ensures pinpoint accuracy even during sustained fire sequences.',
     '{"type": "Assault Rifle", "condition": "Factory New", "productionYear": 2021, "mobility": 115}',
     (SELECT id FROM users WHERE username = 'Sage')
 ),
@@ -173,7 +173,7 @@ INSERT INTO items (collection_id, name, image, description, attributes, user_id)
     (SELECT id FROM collections WHERE slug = 'helix-citizens'),
     'Cyber Citizen #001',
     'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
-    'Elite cyber citizen with neon blue enhancements.',
+    'Cyber Citizen #001 represents the apex of human augmentation, their neural cortex seamlessly interfaced with quantum processing nodes that pulse with electric blue light. Behind synthetic irises lies an enhanced optical system capable of perceiving electromagnetic spectrums invisible to baseline humans. Their bio-mechanical limbs move with fluid precision, each gesture a perfect harmony between organic intuition and digital calculation, making them the ultimate fusion of flesh and circuitry.',
     '{"type": "Avatar", "rarity": "Legendary", "level": 50, "cybernetics": ["Neural Interface", "Optical Enhancement"]}',
     (SELECT id FROM users WHERE username = 'Nicxes')
 ),
@@ -253,7 +253,7 @@ INSERT INTO items (collection_id, name, image, description, attributes, user_id)
     (SELECT id FROM collections WHERE slug = 'cyber-vehicles'),
     'Neon Speedster',
     'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
-    'Ultra-fast hover bike with neon trail effects.',
+    'The Neon Speedster cuts through the urban night like a comet of pure velocity, its sleek carbon-fiber chassis hovering inches above the asphalt on twin plasma jets. Neon underglow strips trace the bike''s aerodynamic curves, leaving trails of electric blue and magenta in its wake as it weaves through traffic at impossible speeds. The rider interface syncs directly with the pilot''s neural implants, turning thought into motion as the bike responds to mere intention rather than physical input.',
     '{"type": "Hover Bike", "topSpeed": 320, "acceleration": 95, "handling": 88, "fuel": "Plasma"}',
     (SELECT id FROM users WHERE username = 'Sage')
 ),
@@ -279,7 +279,7 @@ INSERT INTO items (collection_id, name, image, description, attributes, user_id)
     (SELECT id FROM collections WHERE slug = 'neon-pets'),
     'Cyber Cat - Blue',
     'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
-    'Adorable cyber cat with blue LED fur.',
+    'This enchanting Cyber Cat moves with the grace of its organic ancestors, yet pulses with the electric soul of tomorrow. Thousands of microscopic LED fibers woven throughout its synthetic fur create a constellation of sapphire light that shifts with its mood and movements. Its emerald-green optical sensors track every gesture with loving attention, while an advanced AI personality core gives it the curiosity of a kitten and the wisdom of an ancient companion.',
     '{"type": "Cat", "color": "Blue", "intelligence": 85, "loyalty": 92, "energy": 78}',
     (SELECT id FROM users WHERE username = 'Nicxes')
 ),
@@ -383,7 +383,7 @@ INSERT INTO items (collection_id, name, image, description, attributes, user_id)
     (SELECT id FROM collections WHERE slug = 'game-items'),
     'Power Crystal',
     'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
-    'Rare energy crystal that boosts all abilities.',
+    'The Power Crystal radiates with an inner fire that seems to bend reality itself around its crystalline facets. This legendary artifact pulses with raw energy harvested from quantum storms, its surface crackling with miniature lightning that dances between dimensions. When activated, it floods the user''s bio-systems with pure power, enhancing every synapse, every reflex, every fiber of being to superhuman levels. The crystal''s otherworldly hum resonates in frequencies that touch the very fabric of digital space.',
     '{"type": "Power-up", "rarity": "Legendary", "effect": "+50% All Stats", "duration": 300}',
     (SELECT id FROM users WHERE username = 'Nicxes')
 ),
@@ -410,6 +410,1202 @@ INSERT INTO items (collection_id, name, image, description, attributes, user_id)
     'Essential tools for any cyber operation.',
     '{"type": "Tool", "rarity": "Rare", "hackPower": 88, "uses": 50, "special": "Bypass Security"}',
     (SELECT id FROM users WHERE username = 'Blake')
+),
+
+-- More HELIX Citizens (Avatars) - Total: 15 items
+(
+    (SELECT id FROM collections WHERE slug = 'helix-citizens'),
+    'Cyber Citizen #205',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Military-grade augmented soldier with tactical implants.',
+    '{"type": "Avatar", "rarity": "Epic", "level": 45, "cybernetics": ["Combat Systems", "Tactical HUD"]}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'helix-citizens'),
+    'Cyber Citizen #311',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Artist with creative neural pathways enhanced for digital art.',
+    '{"type": "Avatar", "rarity": "Rare", "level": 32, "cybernetics": ["Creative Cortex", "Color Vision+"]}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'helix-citizens'),
+    'Cyber Citizen #447',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Street medic with bio-healing capabilities.',
+    '{"type": "Avatar", "rarity": "Epic", "level": 40, "cybernetics": ["Med Scanner", "Bio Synthesizer"]}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'helix-citizens'),
+    'Cyber Citizen #589',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Engineer with mechanical augmentations.',
+    '{"type": "Avatar", "rarity": "Rare", "level": 38, "cybernetics": ["Tool Interface", "Blueprint Vision"]}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'helix-citizens'),
+    'Cyber Citizen #672',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Pilot with enhanced reflexes and spatial awareness.',
+    '{"type": "Avatar", "rarity": "Epic", "level": 42, "cybernetics": ["Flight Computer", "G-Force Compensation"]}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'helix-citizens'),
+    'Cyber Citizen #758',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Trader with market analysis implants.',
+    '{"type": "Avatar", "rarity": "Rare", "level": 29, "cybernetics": ["Market Scanner", "Price Predictor"]}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'helix-citizens'),
+    'Cyber Citizen #823',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Security specialist with threat detection systems.',
+    '{"type": "Avatar", "rarity": "Epic", "level": 48, "cybernetics": ["Threat Scanner", "Combat Protocols"]}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'helix-citizens'),
+    'Cyber Citizen #901',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Researcher with enhanced cognitive processing.',
+    '{"type": "Avatar", "rarity": "Legendary", "level": 52, "cybernetics": ["Quantum Brain", "Data Archive"]}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'helix-citizens'),
+    'Cyber Citizen #104',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Explorer with environmental adaptation systems.',
+    '{"type": "Avatar", "rarity": "Rare", "level": 33, "cybernetics": ["Climate Control", "Terrain Scanner"]}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'helix-citizens'),
+    'Cyber Citizen #256',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Mechanic with tool-integrated limbs.',
+    '{"type": "Avatar", "rarity": "Epic", "level": 41, "cybernetics": ["Multi-Tool Arms", "Diagnostic Vision"]}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'helix-citizens'),
+    'Cyber Citizen #367',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'DJ with audio processing implants.',
+    '{"type": "Avatar", "rarity": "Rare", "level": 35, "cybernetics": ["Sound Synthesizer", "Beat Detector"]}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'helix-citizens'),
+    'Cyber Citizen #499',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Chef with enhanced taste and smell sensors.',
+    '{"type": "Avatar", "rarity": "Rare", "level": 31, "cybernetics": ["Flavor Analyzer", "Nutrition Scanner"]}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+
+-- More Blade Runner Weapons - Total: 12 items
+(
+    (SELECT id FROM collections WHERE slug = 'blade-runner'),
+    'Blade Runner Katana',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Traditional katana with molecular-sharp edge.',
+    '{"type": "Sword", "condition": "Factory New", "productionYear": 2023, "mobility": 105, "damage": 95}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'blade-runner'),
+    'Blade Runner Rifle',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Advanced rifle with smart targeting system.',
+    '{"type": "Rifle", "condition": "Factory New", "productionYear": 2023, "mobility": 75, "damage": 110}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'blade-runner'),
+    'Blade Runner Axe',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Heavy axe with energy core enhancement.',
+    '{"type": "Axe", "condition": "Field-Tested", "productionYear": 2022, "mobility": 65, "damage": 125}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'blade-runner'),
+    'Blade Runner Dagger',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Lightweight dagger perfect for stealth operations.',
+    '{"type": "Dagger", "condition": "Factory New", "productionYear": 2023, "mobility": 125, "damage": 60}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'blade-runner'),
+    'Blade Runner Crossbow',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Silent crossbow with explosive bolts.',
+    '{"type": "Crossbow", "condition": "Well-Worn", "productionYear": 2021, "mobility": 85, "damage": 88}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'blade-runner'),
+    'Blade Runner Grenade',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'EMP grenade with area effect damage.',
+    '{"type": "Grenade", "condition": "Factory New", "productionYear": 2023, "mobility": 95, "damage": 140}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'blade-runner'),
+    'Blade Runner Shield',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Energy shield that deflects projectiles.',
+    '{"type": "Shield", "condition": "Factory New", "productionYear": 2023, "mobility": 90, "defense": 85}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'blade-runner'),
+    'Blade Runner Hammer',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Devastating hammer with shock wave generation.',
+    '{"type": "Hammer", "condition": "Field-Tested", "productionYear": 2022, "mobility": 55, "damage": 135}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+
+-- More Fire Dragon Weapons - Total: 10 items
+(
+    (SELECT id FROM collections WHERE slug = 'fire-dragon'),
+    'Fire Dragon Pistol',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Compact pistol with flame ammunition.',
+    '{"type": "Pistol", "condition": "Factory New", "productionYear": 2023, "mobility": 98, "damage": 70}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'fire-dragon'),
+    'Fire Dragon SMG',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Rapid-fire SMG with incendiary rounds.',
+    '{"type": "SMG", "condition": "Field-Tested", "productionYear": 2022, "mobility": 112, "damage": 68}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'fire-dragon'),
+    'Fire Dragon Blade',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Flaming sword that burns enemies on contact.',
+    '{"type": "Sword", "condition": "Factory New", "productionYear": 2023, "mobility": 108, "damage": 105}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'fire-dragon'),
+    'Fire Dragon Launcher',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Rocket launcher with napalm warheads.',
+    '{"type": "Launcher", "condition": "Factory New", "productionYear": 2023, "mobility": 45, "damage": 175}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'fire-dragon'),
+    'Fire Dragon Bow',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Mystical bow that shoots fire arrows.',
+    '{"type": "Bow", "condition": "Field-Tested", "productionYear": 2022, "mobility": 88, "damage": 92}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'fire-dragon'),
+    'Fire Dragon Gauntlets',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Armored gauntlets that channel flame energy.',
+    '{"type": "Gauntlets", "condition": "Factory New", "productionYear": 2023, "mobility": 95, "damage": 78}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'fire-dragon'),
+    'Fire Dragon Staff',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Magical staff that commands fire elements.',
+    '{"type": "Staff", "condition": "Factory New", "productionYear": 2023, "mobility": 82, "damage": 115}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+
+-- More Kal Rifle items - Total: 12 items
+(
+    (SELECT id FROM collections WHERE slug = 'kal-rifle'),
+    'Kal Rifle - Tactical',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Tactical variant with advanced scope and grip.',
+    '{"type": "Assault Rifle", "condition": "Factory New", "productionYear": 2023, "mobility": 88, "damage": 92}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'kal-rifle'),
+    'Kal Rifle - Stealth',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Silenced version for covert operations.',
+    '{"type": "Assault Rifle", "condition": "Field-Tested", "productionYear": 2022, "mobility": 92, "damage": 85}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'kal-rifle'),
+    'Kal Rifle - Heavy',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Heavy variant with increased firepower.',
+    '{"type": "Assault Rifle", "condition": "Factory New", "productionYear": 2023, "mobility": 75, "damage": 105}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'kal-rifle'),
+    'Kal Rifle - Scout',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Lightweight scout version for mobility.',
+    '{"type": "Assault Rifle", "condition": "Well-Worn", "productionYear": 2021, "mobility": 98, "damage": 78}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'kal-rifle'),
+    'Kal Rifle - Sniper',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Long-range sniper configuration.',
+    '{"type": "Sniper Rifle", "condition": "Factory New", "productionYear": 2023, "mobility": 65, "damage": 125}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'kal-rifle'),
+    'Kal Rifle - CQB',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Close quarters battle variant.',
+    '{"type": "Assault Rifle", "condition": "Field-Tested", "productionYear": 2022, "mobility": 95, "damage": 88}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'kal-rifle'),
+    'Kal Rifle - DMR',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Designated marksman rifle with precision optics.',
+    '{"type": "DMR", "condition": "Factory New", "productionYear": 2023, "mobility": 78, "damage": 98}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'kal-rifle'),
+    'Kal Rifle - Burst',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Burst-fire variant for controlled shooting.',
+    '{"type": "Assault Rifle", "condition": "Field-Tested", "productionYear": 2022, "mobility": 85, "damage": 90}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'kal-rifle'),
+    'Kal Rifle - Auto',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Full-auto variant with drum magazine.',
+    '{"type": "LMG", "condition": "Factory New", "productionYear": 2023, "mobility": 68, "damage": 95}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+
+-- More Cyber Vehicles - Total: 15 items
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-vehicles'),
+    'Hover Sedan',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Luxury hover sedan for city cruising.',
+    '{"type": "Sedan", "topSpeed": 200, "acceleration": 75, "handling": 82, "fuel": "Electric", "passengers": 4}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-vehicles'),
+    'Cyber Motorcycle',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'High-speed motorcycle with AI navigation.',
+    '{"type": "Motorcycle", "topSpeed": 280, "acceleration": 92, "handling": 95, "fuel": "Fusion"}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-vehicles'),
+    'Stealth Fighter',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Advanced stealth aircraft for aerial combat.',
+    '{"type": "Aircraft", "topSpeed": 1200, "acceleration": 85, "handling": 78, "fuel": "Plasma", "stealth": true}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-vehicles'),
+    'Submersible Pod',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Underwater exploration vehicle.',
+    '{"type": "Submarine", "topSpeed": 120, "acceleration": 55, "handling": 68, "fuel": "Nuclear", "depth": 5000}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-vehicles'),
+    'Mech Walker',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Bipedal mech for heavy combat operations.',
+    '{"type": "Mech", "topSpeed": 80, "acceleration": 45, "handling": 35, "fuel": "Fusion", "weapons": true}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-vehicles'),
+    'Racing Drone',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Ultra-fast racing drone for competitions.',
+    '{"type": "Drone", "topSpeed": 350, "acceleration": 98, "handling": 95, "fuel": "Battery"}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-vehicles'),
+    'Cargo Hauler',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Heavy-duty cargo transport vehicle.',
+    '{"type": "Truck", "topSpeed": 150, "acceleration": 40, "handling": 25, "fuel": "Hybrid", "cargo": 15000}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-vehicles'),
+    'Sports Coupe',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'High-performance sports car with neural link.',
+    '{"type": "Sports Car", "topSpeed": 380, "acceleration": 90, "handling": 88, "fuel": "Hydrogen"}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-vehicles'),
+    'Utility ATV',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'All-terrain vehicle for rough environments.',
+    '{"type": "ATV", "topSpeed": 160, "acceleration": 70, "handling": 85, "fuel": "Electric", "terrain": "All"}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-vehicles'),
+    'Luxury Yacht',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'High-tech yacht for water exploration.',
+    '{"type": "Yacht", "topSpeed": 95, "acceleration": 35, "handling": 45, "fuel": "Solar", "luxury": true}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-vehicles'),
+    'Space Shuttle',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Interplanetary transport vehicle.',
+    '{"type": "Spacecraft", "topSpeed": 25000, "acceleration": 60, "handling": 55, "fuel": "Antimatter"}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-vehicles'),
+    'Battle Tank',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Heavily armored combat vehicle.',
+    '{"type": "Tank", "topSpeed": 70, "acceleration": 25, "handling": 15, "fuel": "Diesel", "armor": 98}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+
+-- More Neon Pets - Total: 18 items
+(
+    (SELECT id FROM collections WHERE slug = 'neon-pets'),
+    'Cyber Wolf',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Loyal wolf companion with pack instincts.',
+    '{"type": "Wolf", "color": "Silver", "intelligence": 88, "loyalty": 95, "energy": 90}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'neon-pets'),
+    'Digital Dragon',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Majestic dragon with fire breath ability.',
+    '{"type": "Dragon", "color": "Red", "intelligence": 98, "loyalty": 85, "energy": 95, "ability": "Fire Breath"}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'neon-pets'),
+    'Neon Tiger',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Fierce tiger with electric stripes.',
+    '{"type": "Tiger", "color": "Orange", "intelligence": 82, "loyalty": 78, "energy": 88}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'neon-pets'),
+    'Plasma Fox',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Cunning fox with plasma tail effects.',
+    '{"type": "Fox", "color": "Blue", "intelligence": 92, "loyalty": 75, "energy": 85}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'neon-pets'),
+    'Cyber Hawk',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Swift hawk with enhanced vision.',
+    '{"type": "Hawk", "color": "Brown", "intelligence": 85, "loyalty": 88, "energy": 92, "ability": "Eagle Eye"}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'neon-pets'),
+    'Holo Snake',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Mysterious snake that phases in and out.',
+    '{"type": "Snake", "color": "Green", "intelligence": 78, "loyalty": 65, "energy": 75, "ability": "Phase"}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'neon-pets'),
+    'Digital Rabbit',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Quick rabbit with jump boost ability.',
+    '{"type": "Rabbit", "color": "White", "intelligence": 72, "loyalty": 85, "energy": 95, "ability": "Super Jump"}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'neon-pets'),
+    'Neon Owl',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Wise owl with night vision capabilities.',
+    '{"type": "Owl", "color": "Purple", "intelligence": 95, "loyalty": 82, "energy": 68, "ability": "Night Vision"}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'neon-pets'),
+    'Cyber Bear',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Strong bear with protective instincts.',
+    '{"type": "Bear", "color": "Black", "intelligence": 80, "loyalty": 92, "energy": 78}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'neon-pets'),
+    'Plasma Dolphin',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Intelligent dolphin with sonic abilities.',
+    '{"type": "Dolphin", "color": "Blue", "intelligence": 92, "loyalty": 88, "energy": 82, "ability": "Sonar"}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'neon-pets'),
+    'Digital Monkey',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Playful monkey with acrobatic skills.',
+    '{"type": "Monkey", "color": "Brown", "intelligence": 88, "loyalty": 75, "energy": 95}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'neon-pets'),
+    'Neon Turtle',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Wise turtle with defensive capabilities.',
+    '{"type": "Turtle", "color": "Green", "intelligence": 85, "loyalty": 95, "energy": 45, "ability": "Shell Shield"}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'neon-pets'),
+    'Cyber Panther',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Stealthy panther with invisibility cloak.',
+    '{"type": "Panther", "color": "Black", "intelligence": 90, "loyalty": 82, "energy": 88, "ability": "Stealth"}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'neon-pets'),
+    'Holo Penguin',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Adorable penguin with ice abilities.',
+    '{"type": "Penguin", "color": "Black-White", "intelligence": 75, "loyalty": 88, "energy": 72, "ability": "Ice Slide"}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'neon-pets'),
+    'Digital Spider',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Agile spider with web-weaving skills.',
+    '{"type": "Spider", "color": "Red", "intelligence": 78, "loyalty": 65, "energy": 85, "ability": "Web Trap"}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+
+-- More Cyber Wearables - Total: 20 items
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-wearables'),
+    'Neural Headband',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Headband that enhances mental processing power.',
+    '{"type": "Headband", "material": "Titanium", "features": ["Brain Boost", "Memory Enhancement", "Focus Mode"]}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-wearables'),
+    'Power Gloves',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Gloves that amplify physical strength.',
+    '{"type": "Gloves", "material": "Carbon Fiber", "features": ["Strength Boost", "Grip Enhancement", "Shock Absorption"]}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-wearables'),
+    'Stealth Cloak',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Cloak that provides optical invisibility.',
+    '{"type": "Cloak", "material": "Meta-material", "features": ["Optical Camouflage", "Thermal Masking", "Sound Dampening"]}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-wearables'),
+    'Cyber Mask',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Mask with air filtration and voice modulation.',
+    '{"type": "Mask", "material": "Polymer", "features": ["Air Filter", "Voice Changer", "Gas Protection"]}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-wearables'),
+    'Energy Shield Belt',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Belt that generates personal energy shields.',
+    '{"type": "Belt", "material": "Alloy", "features": ["Energy Shield", "Power Storage", "Quick Deploy"]}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-wearables'),
+    'Hover Backpack',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Backpack with anti-gravity capabilities.',
+    '{"type": "Backpack", "material": "Composite", "features": ["Anti-Gravity", "Extra Storage", "Weight Reduction"]}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-wearables'),
+    'Thermal Suit',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Suit that regulates body temperature.',
+    '{"type": "Suit", "material": "Smart Fabric", "features": ["Temperature Control", "Insulation", "Breathability"]}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-wearables'),
+    'Speed Shoes',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Shoes that enhance running speed.',
+    '{"type": "Shoes", "material": "Nanomaterial", "features": ["Speed Boost", "Traction Control", "Energy Return"]}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-wearables'),
+    'Data Wristband',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Wristband with data processing capabilities.',
+    '{"type": "Wristband", "material": "Silicon", "features": ["Data Storage", "Wireless Transfer", "Biometric Scanner"]}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-wearables'),
+    'Tactical Vest',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Armored vest with utility pockets.',
+    '{"type": "Vest", "material": "Kevlar", "features": ["Bullet Resistance", "Storage Pockets", "Lightweight"]}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-wearables'),
+    'Vision Visor',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Visor with enhanced vision modes.',
+    '{"type": "Visor", "material": "Crystal", "features": ["X-Ray Vision", "Thermal Vision", "Zoom Function"]}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-wearables'),
+    'Cyber Earpiece',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Earpiece with communication and translation.',
+    '{"type": "Earpiece", "material": "Titanium", "features": ["Comm Link", "Language Translation", "Noise Canceling"]}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-wearables'),
+    'Smart Ring',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Ring with digital interface capabilities.',
+    '{"type": "Ring", "material": "Gold Alloy", "features": ["Holographic Display", "Gesture Control", "Biometric Lock"]}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-wearables'),
+    'Nano Shirt',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Shirt made of programmable nanobots.',
+    '{"type": "Shirt", "material": "Nanobots", "features": ["Self-Repair", "Color Change", "Adaptive Fit"]}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-wearables'),
+    'Magnetic Bracelet',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Bracelet that manipulates magnetic fields.',
+    '{"type": "Bracelet", "material": "Magnetic Alloy", "features": ["Magnetic Control", "Metal Detection", "Field Generation"]}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-wearables'),
+    'Quantum Watch',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Watch that can manipulate time perception.',
+    '{"type": "Watch", "material": "Quantum Crystal", "features": ["Time Dilation", "Dimensional Clock", "Temporal Shield"]}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'cyber-wearables'),
+    'Holographic Hat',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Hat that projects holographic displays.',
+    '{"type": "Hat", "material": "Smart Fabric", "features": ["Hologram Projector", "Weather Protection", "Style Changer"]}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+
+-- More Music NFTs - Total: 25 items
+(
+    (SELECT id FROM collections WHERE slug = 'music-nfts'),
+    'Bass Drop Revolution',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Hard-hitting electronic track with massive bass drops.',
+    '{"type": "Music", "genre": "Electronic", "duration": 210, "bpm": 128, "artist": "BassKing"}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'music-nfts'),
+    'Quantum Jazz Fusion',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Experimental jazz with quantum sound effects.',
+    '{"type": "Music", "genre": "Jazz Fusion", "duration": 320, "bpm": 90, "artist": "QuantumJazz"}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'music-nfts'),
+    'Cyber Punk Anthem',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Aggressive punk rock with cyber elements.',
+    '{"type": "Music", "genre": "Cyber Punk", "duration": 190, "bpm": 160, "artist": "NeonRebel"}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'music-nfts'),
+    'Digital Orchestra Suite',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Classical orchestra enhanced with digital instruments.',
+    '{"type": "Music", "genre": "Digital Classical", "duration": 480, "bpm": 72, "artist": "DigiMaestro"}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'music-nfts'),
+    'Techno Underground',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Underground techno with hypnotic beats.',
+    '{"type": "Music", "genre": "Techno", "duration": 360, "bpm": 135, "artist": "UndergroundTech"}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'music-nfts'),
+    'Ambient Space Journey',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Ambient soundscape inspired by space exploration.',
+    '{"type": "Music", "genre": "Ambient", "duration": 600, "bpm": 50, "artist": "CosmicSounds"}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'music-nfts'),
+    'Glitch Hop Experiment',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Experimental glitch hop with unique sound design.',
+    '{"type": "Music", "genre": "Glitch Hop", "duration": 255, "bpm": 110, "artist": "GlitchMaster"}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'music-nfts'),
+    'Synthwave Memories',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Nostalgic synthwave track reminiscent of the 80s.',
+    '{"type": "Music", "genre": "Synthwave", "duration": 275, "bpm": 118, "artist": "RetroWave"}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'music-nfts'),
+    'Drum and Bass Velocity',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'High-energy drum and bass with rapid breakbeats.',
+    '{"type": "Music", "genre": "Drum and Bass", "duration": 285, "bpm": 174, "artist": "VelocityDnB"}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'music-nfts'),
+    'Chill Trap Vibes',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Relaxed trap beats with chill atmosphere.',
+    '{"type": "Music", "genre": "Chill Trap", "duration": 220, "bpm": 85, "artist": "ChillTrapLord"}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'music-nfts'),
+    'Industrial Metal Core',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Heavy industrial metal with electronic elements.',
+    '{"type": "Music", "genre": "Industrial Metal", "duration": 240, "bpm": 145, "artist": "MetalCore"}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'music-nfts'),
+    'Future Bass Evolution',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Melodic future bass with emotional drops.',
+    '{"type": "Music", "genre": "Future Bass", "duration": 195, "bpm": 140, "artist": "FutureBeat"}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'music-nfts'),
+    'Dubstep Destruction',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Aggressive dubstep with heavy wobbles.',
+    '{"type": "Music", "genre": "Dubstep", "duration": 265, "bpm": 140, "artist": "DubDestroyer"}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'music-nfts'),
+    'Lo-Fi Hip Hop Study',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Relaxing lo-fi hip hop perfect for studying.',
+    '{"type": "Music", "genre": "Lo-Fi Hip Hop", "duration": 180, "bpm": 70, "artist": "LoFiStudy"}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'music-nfts'),
+    'Psytrance Journey',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Mind-bending psytrance with psychedelic elements.',
+    '{"type": "Music", "genre": "Psytrance", "duration": 420, "bpm": 145, "artist": "PsyMind"}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'music-nfts'),
+    'Hardstyle Energy',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'High-energy hardstyle with powerful kicks.',
+    '{"type": "Music", "genre": "Hardstyle", "duration": 300, "bpm": 150, "artist": "HardEnergy"}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'music-nfts'),
+    'Atmospheric Breakbeat',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Atmospheric breakbeat with cinematic elements.',
+    '{"type": "Music", "genre": "Breakbeat", "duration": 315, "bpm": 125, "artist": "AtmoBreak"}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'music-nfts'),
+    'Minimal Techno Loop',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Minimalist techno with hypnotic loops.',
+    '{"type": "Music", "genre": "Minimal Techno", "duration": 480, "bpm": 125, "artist": "MinimalLoop"}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'music-nfts'),
+    'House Music Classic',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Classic house music with soulful vocals.',
+    '{"type": "Music", "genre": "House", "duration": 360, "bpm": 122, "artist": "HouseClassic"}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'music-nfts'),
+    'Trap Metal Fusion',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Aggressive fusion of trap and metal elements.',
+    '{"type": "Music", "genre": "Trap Metal", "duration": 175, "bpm": 155, "artist": "TrapMetal"}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'music-nfts'),
+    'Cinematic Score Epic',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Epic cinematic score with orchestral arrangements.',
+    '{"type": "Music", "genre": "Cinematic", "duration": 540, "bpm": 80, "artist": "EpicScore"}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'music-nfts'),
+    'Vaporwave Aesthetic',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Aesthetic vaporwave with retro vibes.',
+    '{"type": "Music", "genre": "Vaporwave", "duration": 290, "bpm": 65, "artist": "VaporAesthetic"}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+
+-- More Art Pieces - Total: 22 items
+(
+    (SELECT id FROM collections WHERE slug = 'art-pieces'),
+    'Fractal Dreams',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Infinite fractal patterns in vivid colors.',
+    '{"type": "Digital Art", "style": "Fractal", "dimensions": "4K", "artist": "FractalDreamer", "medium": "Algorithmic"}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'art-pieces'),
+    'Neural Network Portrait',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'AI-generated portrait using neural networks.',
+    '{"type": "Digital Art", "style": "AI Generated", "dimensions": "8K", "artist": "NeuralArt", "medium": "Machine Learning"}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'art-pieces'),
+    'Holographic Sculpture',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Three-dimensional holographic art piece.',
+    '{"type": "Digital Art", "style": "3D Hologram", "dimensions": "Volumetric", "artist": "HoloArtist", "medium": "Holography"}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'art-pieces'),
+    'Pixel Art Masterpiece',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Detailed pixel art with retro gaming aesthetic.',
+    '{"type": "Digital Art", "style": "Pixel Art", "dimensions": "1024x1024", "artist": "PixelMaster", "medium": "Digital Pixels"}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'art-pieces'),
+    'Cyberpunk Cityscape',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Neon-lit cyberpunk city with flying cars.',
+    '{"type": "Digital Art", "style": "Cyberpunk", "dimensions": "8K", "artist": "CyberScape", "medium": "Digital Paint"}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'art-pieces'),
+    'Abstract Motion',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Dynamic abstract art with flowing movements.',
+    '{"type": "Digital Art", "style": "Abstract", "dimensions": "4K", "artist": "MotionArt", "medium": "Motion Graphics"}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'art-pieces'),
+    'Glitch Art Error',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Intentional digital glitches creating art.',
+    '{"type": "Digital Art", "style": "Glitch Art", "dimensions": "4K", "artist": "GlitchError", "medium": "Data Corruption"}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'art-pieces'),
+    'Surreal Landscape',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Dreamlike surreal landscape with impossible geometry.',
+    '{"type": "Digital Art", "style": "Surrealism", "dimensions": "8K", "artist": "SurrealDream", "medium": "Digital Paint"}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'art-pieces'),
+    'Minimalist Geometry',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Clean minimalist design with geometric shapes.',
+    '{"type": "Digital Art", "style": "Minimalism", "dimensions": "4K", "artist": "MinimalGeo", "medium": "Vector Art"}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'art-pieces'),
+    'Photorealistic Portrait',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Incredibly detailed photorealistic digital portrait.',
+    '{"type": "Digital Art", "style": "Photorealism", "dimensions": "8K", "artist": "PhotoReal", "medium": "Digital Paint"}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'art-pieces'),
+    'Pop Art Digital',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Modern pop art with digital twist.',
+    '{"type": "Digital Art", "style": "Pop Art", "dimensions": "4K", "artist": "DigitalPop", "medium": "Digital Collage"}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'art-pieces'),
+    'Conceptual Installation',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Interactive conceptual art installation.',
+    '{"type": "Digital Art", "style": "Conceptual", "dimensions": "Interactive", "artist": "ConceptArt", "medium": "Mixed Media"}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'art-pieces'),
+    'Atmospheric Landscape',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Moody atmospheric landscape with dramatic lighting.',
+    '{"type": "Digital Art", "style": "Atmospheric", "dimensions": "8K", "artist": "AtmoScape", "medium": "Digital Paint"}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'art-pieces'),
+    'Retro Futurism',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Retro-futuristic vision of tomorrow.',
+    '{"type": "Digital Art", "style": "Retro Futurism", "dimensions": "4K", "artist": "RetroFuture", "medium": "Digital Paint"}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'art-pieces'),
+    'Biomechanical Fusion',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Fusion of biological and mechanical forms.',
+    '{"type": "Digital Art", "style": "Biomechanical", "dimensions": "8K", "artist": "BioMech", "medium": "3D Render"}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'art-pieces'),
+    'Psychedelic Patterns',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Mind-bending psychedelic patterns and colors.',
+    '{"type": "Digital Art", "style": "Psychedelic", "dimensions": "4K", "artist": "PsycheArt", "medium": "Digital Pattern"}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'art-pieces'),
+    'Gothic Architecture',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Dark gothic architectural visualization.',
+    '{"type": "Digital Art", "style": "Gothic", "dimensions": "8K", "artist": "GothicArch", "medium": "3D Render"}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'art-pieces'),
+    'Nature Macro Detail',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Extreme close-up of natural textures and patterns.',
+    '{"type": "Digital Art", "style": "Nature Macro", "dimensions": "8K", "artist": "MacroNature", "medium": "Digital Photography"}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'art-pieces'),
+    'Steampunk Machinery',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Intricate steampunk mechanical contraptions.',
+    '{"type": "Digital Art", "style": "Steampunk", "dimensions": "4K", "artist": "SteamMech", "medium": "3D Render"}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+
+-- More Game Items - Total: 30 items
+(
+    (SELECT id FROM collections WHERE slug = 'game-items'),
+    'Energy Potion',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Restores energy and stamina instantly.',
+    '{"type": "Consumable", "rarity": "Common", "effect": "+25% Energy", "duration": 120}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'game-items'),
+    'Health Pack',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Emergency medical kit for quick healing.',
+    '{"type": "Consumable", "rarity": "Common", "effect": "+50 Health", "duration": 0}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'game-items'),
+    'Speed Boost Module',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Temporarily increases movement speed.',
+    '{"type": "Power-up", "rarity": "Rare", "effect": "+35% Speed", "duration": 180}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'game-items'),
+    'Armor Plating',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Additional protective armor layer.',
+    '{"type": "Armor", "rarity": "Epic", "defense": 75, "durability": 500}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'game-items'),
+    'Invisibility Cloak',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Grants temporary invisibility to the user.',
+    '{"type": "Power-up", "rarity": "Legendary", "effect": "Invisibility", "duration": 60}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'game-items'),
+    'Damage Amplifier',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Increases weapon damage output.',
+    '{"type": "Enhancement", "rarity": "Epic", "effect": "+40% Damage", "duration": 240}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'game-items'),
+    'Scanner Device',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Reveals hidden enemies and objects.',
+    '{"type": "Tool", "rarity": "Rare", "range": 100, "uses": 25, "special": "Enemy Detection"}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'game-items'),
+    'Jump Boots',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Boots that enable super high jumps.',
+    '{"type": "Equipment", "rarity": "Rare", "jumpHeight": 200, "durability": 300}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'game-items'),
+    'Mana Crystal',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Restores magical energy for spellcasting.',
+    '{"type": "Consumable", "rarity": "Uncommon", "effect": "+75 Mana", "duration": 0}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'game-items'),
+    'Teleporter Device',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Allows instant teleportation to marked locations.',
+    '{"type": "Tool", "rarity": "Legendary", "range": 1000, "uses": 5, "special": "Teleportation"}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'game-items'),
+    'Fire Resistance Potion',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Provides immunity to fire damage.',
+    '{"type": "Consumable", "rarity": "Uncommon", "effect": "Fire Immunity", "duration": 300}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'game-items'),
+    'Lock Pick Set',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Professional tools for bypassing locks.',
+    '{"type": "Tool", "rarity": "Common", "successRate": 85, "uses": 50}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'game-items'),
+    'Night Vision Goggles',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Enables clear vision in darkness.',
+    '{"type": "Equipment", "rarity": "Rare", "visionRange": 50, "durability": 200}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'game-items'),
+    'Grappling Hook',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Tool for climbing and swinging across gaps.',
+    '{"type": "Tool", "rarity": "Uncommon", "range": 30, "durability": 150}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'game-items'),
+    'EMP Grenade',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Disables electronic devices in blast radius.',
+    '{"type": "Weapon", "rarity": "Epic", "damage": 0, "radius": 15, "special": "EMP Effect"}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'game-items'),
+    'Resurrection Orb',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Brings fallen teammates back to life.',
+    '{"type": "Consumable", "rarity": "Legendary", "effect": "Resurrect", "uses": 1}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'game-items'),
+    'Freeze Ray',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Weapon that freezes enemies solid.',
+    '{"type": "Weapon", "rarity": "Epic", "damage": 60, "special": "Freeze Effect", "duration": 5}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'game-items'),
+    'Stealth Generator',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Creates a stealth field around the user.',
+    '{"type": "Equipment", "rarity": "Epic", "effect": "Stealth Field", "duration": 45}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'game-items'),
+    'Adrenaline Shot',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Boosts all combat abilities temporarily.',
+    '{"type": "Consumable", "rarity": "Rare", "effect": "+30% All Combat Stats", "duration": 90}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'game-items'),
+    'Force Field Generator',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Creates a protective energy barrier.',
+    '{"type": "Defense", "rarity": "Legendary", "shield": 500, "duration": 30}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'game-items'),
+    'Mind Control Device',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Temporarily controls enemy actions.',
+    '{"type": "Tool", "rarity": "Legendary", "controlDuration": 15, "uses": 3}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'game-items'),
+    'Plasma Cutter',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Industrial tool that cuts through any material.',
+    '{"type": "Tool", "rarity": "Epic", "cuttingPower": 95, "durability": 100}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'game-items'),
+    'Holographic Decoy',
+    'https://helix-web-gilt.vercel.app/images/items/fc92ea2f6acf797dffa40c424a332e5490fd76c2.png',
+    'Creates a holographic duplicate to confuse enemies.',
+    '{"type": "Tool", "rarity": "Rare", "decoyDuration": 20, "uses": 10}',
+    (SELECT id FROM users WHERE username = 'Alex')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'game-items'),
+    'Gravity Manipulator',
+    'https://helix-web-gilt.vercel.app/images/items/01b8792575f2710d62a4b031a9e0e25c39927609.png',
+    'Device that can alter local gravity fields.',
+    '{"type": "Tool", "rarity": "Legendary", "gravityRange": 20, "uses": 8}',
+    (SELECT id FROM users WHERE username = 'Blake')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'game-items'),
+    'Time Dilation Field',
+    'https://helix-web-gilt.vercel.app/images/items/aafbc7ed2324a9170c01678990fdd89b5268d672.png',
+    'Slows down time in a localized area.',
+    '{"type": "Power-up", "rarity": "Legendary", "effect": "Time Slow", "duration": 10, "radius": 25}',
+    (SELECT id FROM users WHERE username = 'Sage')
+),
+(
+    (SELECT id FROM collections WHERE slug = 'game-items'),
+    'Nano Repair Kit',
+    'https://helix-web-gilt.vercel.app/images/items/8b6b97ca381e4c865a07aad2ceea79d1866f39e5.png',
+    'Nanobots that repair damaged equipment.',
+    '{"type": "Tool", "rarity": "Epic", "repairAmount": 75, "uses": 15}',
+    (SELECT id FROM users WHERE username = 'Nicxes')
 );
 
 -- Create indexes

@@ -27,14 +27,15 @@ export default function Actions() {
       </h4>
 
       <div className="grid grid-cols-2 gap-4">
+        {/* Buy now */}
         <AlertDialog.Root>
           <AlertDialog.Trigger>
-            <button
+            <div
               className="relative text-[#0A0A0A] font-bold uppercase bg-alert w-full h-10 flex items-center justify-center gap-2 rounded cursor-pointer after:absolute after:right-0 after:bottom-0 after:bg-[#161616] after:size-4 clip-polygon"
             >
               <FaTag size={20} />
               Buy Now
-            </button>
+            </div>
           </AlertDialog.Trigger>
 
           <AlertDialog.Portal>
@@ -164,15 +165,15 @@ export default function Actions() {
           </AlertDialog.Portal>
         </AlertDialog.Root>
 
+        {/* Make Offer */}
         <AlertDialog.Root>
           <AlertDialog.Trigger>
-            <button 
-              type="button"
+            <div
               className="relative text-white font-bold uppercase bg-white/5 h-10 w-full flex items-center justify-center gap-2 rounded cursor-pointer after:absolute after:right-0 after:bottom-0 after:bg-[#161616] after:size-4 clip-polygon"
             >
               <FaHandHolding size={20} />
               Make Offer
-            </button>
+            </div>
           </AlertDialog.Trigger>
 
           <AlertDialog.Portal>
