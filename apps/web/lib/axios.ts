@@ -38,7 +38,6 @@ instance.interceptors.response.use(
 export const fetcher = (url: string) => {
   return instance.get(url)
     .then(res => {
-      console.log(res.data);
       return res.data;
     })
     .catch(err => {

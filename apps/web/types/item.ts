@@ -3,7 +3,12 @@ export interface Item {
   name: string;
   image: string;
   description: string;
-  attributes: object;
+  attributes: {
+    productionYear: string;
+    category: string;
+    condition: string;
+    type: string;
+  };
   user: {
     id: number;
     email: string;

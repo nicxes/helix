@@ -27,7 +27,19 @@ const stats = [
   }
 ]
 
-export default function Specs() {
+export default function Specs({
+  description,
+  productionYear,
+  category,
+  condition,
+  type
+}: {
+  description: string,
+  productionYear: string,
+  category: string,
+  condition: string,
+  type: string
+}) {
   return (
     <div className="bg-white/5 px-5 py-6 rounded-lg space-y-6">
       <Disclosure defaultOpen as="div" className="space-y-4">
@@ -40,7 +52,7 @@ export default function Specs() {
         </DisclosureButton>
 
         <DisclosurePanel className="font-barlow text-white/50 font-medium">
-          The N75 STREAMLINE helicopter is a marvel of aeronautical engineering, blending cutting-edge technology with raw power. As it slices through the air, the sleek, angular fuselage glints under the sun, its carbon fiber body designed for both speed and stealth. The rotors hum with a deep, resonant pulse, signaling the readiness of its twin-turbo engines to unleash staggering power at a moment&apos;s notice.
+          {description || 'No description available'}
         </DisclosurePanel>
       </Disclosure>
 
@@ -75,33 +87,45 @@ export default function Specs() {
       </div>
 
       <ul className="grid grid-cols-2 gap-6">
-        <li className="font-barlow text-white/50 font-semibold capitalize flex flex-col">
-          Production Year
-          <small className="text-white text-base">
-            2021
-          </small>
-        </li>
+        {/* Production Year */}
+        {productionYear && (
+          <li className="font-barlow text-white/50 font-semibold capitalize flex flex-col">
+            Production Year
+            <small className="text-white text-base">
+              {productionYear}
+            </small>
+          </li>
+        )}
 
-        <li className="font-barlow text-white/50 font-semibold capitalize flex flex-col">
-          Category
-          <small className="text-white text-base">
-            Camo
-          </small>
-        </li>
+        {/* Category */}
+        {category && (
+          <li className="font-barlow text-white/50 font-semibold capitalize flex flex-col">
+            Category
+            <small className="text-white text-base">
+              {category}
+            </small>
+          </li>
+        )}
 
-        <li className="font-barlow text-white/50 font-semibold capitalize flex flex-col">
-          Condition
-          <small className="text-white text-base">
-            Factory New
-          </small>
-        </li>
+        {/* Condition */}
+        {condition && (
+          <li className="font-barlow text-white/50 font-semibold capitalize flex flex-col">
+            Condition
+            <small className="text-white text-base">
+              {condition}
+            </small>
+          </li>
+        )}
 
-        <li className="font-barlow text-white/50 font-semibold capitalize flex flex-col">
-          Type
-          <small className="text-white text-base">
-            Assault Rifle
-          </small>
-        </li>
+        {/* Type */}
+        {type && (
+          <li className="font-barlow text-white/50 font-semibold capitalize flex flex-col">
+            Type
+            <small className="text-white text-base">
+              {type}
+            </small>
+          </li>
+        )}
       </ul>
     </div>
   )
