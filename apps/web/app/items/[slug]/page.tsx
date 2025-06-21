@@ -30,8 +30,6 @@ export default async function ItemPage({ params }: PageProps) {
   const resolvedParams = await params;
   const item = await getItem(resolvedParams.slug);
 
-  console.log(item)
-
   if (!item) {
     notFound();
   }
