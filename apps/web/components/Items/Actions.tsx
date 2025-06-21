@@ -20,8 +20,6 @@ export default function Actions({ id }: { id: string }) {
     setBalance(data.user.balance)
   }
 
-  console.log(offer)
-
   const handlePurchase = async() => {
     try {
       setLoading(true)

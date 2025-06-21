@@ -5,38 +5,30 @@ import Header from "@/components/Items/Header";
 import MoreItems from "@/components/Items/MoreItems";
 import { Item } from "@/types/item";
 import { notFound } from "next/navigation";
+import axios from "@/lib/axios";
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 async function getItem(id: string): Promise<Item | null> {
   try {
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
-    const response = await fetch(`${apiUrl}/items/${id}`, {
-      // Next.js 13+ server-side fetch configuration
-      cache: 'no-store', // Always fetch fresh data, or use 'force-cache' for caching
-    });
-
-    if (!response.ok) {
-      if (response.status === 404) {
-        return null;
-      }
-      throw new Error(`Failed to fetch item: ${response.status}`);
+    const response = await axios.get(`/items/${id}`);
+    return response.data;
+  } catch (error: any) {
+    if (error.response?.status === 404) {
+      return null;
     }
-
-    const item = await response.json();
-    return item;
-  } catch (error) {
     console.error('Error fetching item:', error);
     return null;
   }
 }
 
 export default async function ItemPage({ params }: PageProps) {
-  const item = await getItem(params.slug);
+  const resolvedParams = await params;
+  const item = await getItem(resolvedParams.slug);
 
   console.log(item)
 
