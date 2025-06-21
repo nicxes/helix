@@ -8,7 +8,7 @@ import { FaRegHeart, FaBinoculars, FaEye, FaTag, FaHandHolding, FaCaretDown, FaR
 import Chart from '@/components/Items/Chart'
 import Actions from '@/components/Items/Actions'
 
-export default function Header() {
+export default function Header({ id }: { id: string }) {
   return (
     <header className="space-y-4">
       {/* Title and Author */}
@@ -95,7 +95,7 @@ export default function Header() {
       </div>
 
       {/* Actions */}
-      <Actions />
+      <Actions id={id} />
 
       {/* Charts and Prices */}
       <div className="bg-white/5 p-5 rounded-lg">

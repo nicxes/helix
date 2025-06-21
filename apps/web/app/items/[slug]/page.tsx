@@ -55,7 +55,7 @@ export default async function ItemPage({ params }: PageProps) {
 
       <section>
         <div className="container mx-auto max-w-hd px-6">
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
 
             <div>
               <div className="sticky top-6 space-y-6">
@@ -71,7 +71,9 @@ export default async function ItemPage({ params }: PageProps) {
             </div>
 
             <div>
-              <Header />
+              <Header
+                id={item.id}
+              />
             </div>
 
           </div>
